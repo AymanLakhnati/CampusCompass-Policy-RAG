@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14",
+  "torch": "2.5.1+cu118",
+  "transformers": "4.57.1",
+  "tokenizers": "0.22.2",
+  "huggingface_hub": "0.36.2",
+  "cuda_available": true,
+  "cuda_runtime": "11.8",
+  "gpu": "NVIDIA GeForce GTX 1650 Ti",
+  "logical_processors": 12,
+  "notes": [
+    "Model experiments ran concurrently with other project tasks; wall-clock latency is environment-specific.",
+    "FLAN experiment ran CPU; Qwen experiment ran CUDA.",
+    "Model assets reside in the normal Hugging Face cache and are not bundled."
+  ]
+}

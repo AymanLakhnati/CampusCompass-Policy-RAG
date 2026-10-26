@@ -1,0 +1,2 @@
+# The complete default web demo and evaluation use Python 3.10+ stdlib only.
+# Optional neural retrieval and LLM experiments: requirements-ml.txt.

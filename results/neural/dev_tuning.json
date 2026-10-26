@@ -1,0 +1,238 @@
+{
+  "dense": {
+    "selected": {
+      "threshold": 0.3,
+      "balanced_accuracy": 1.0,
+      "answerable_acceptance": 1.0,
+      "unanswerable_rejection": 1.0
+    },
+    "candidates": [
+      {
+        "threshold": 0.05,
+        "balanced_accuracy": 0.8333333333333333,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.6666666666666666
+      },
+      {
+        "threshold": 0.1,
+        "balanced_accuracy": 0.8333333333333333,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.6666666666666666
+      },
+      {
+        "threshold": 0.15,
+        "balanced_accuracy": 0.8333333333333333,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.6666666666666666
+      },
+      {
+        "threshold": 0.2,
+        "balanced_accuracy": 0.9166666666666667,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.8333333333333334
+      },
+      {
+        "threshold": 0.25,
+        "balanced_accuracy": 0.9166666666666667,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.8333333333333334
+      },
+      {
+        "threshold": 0.3,
+        "balanced_accuracy": 1.0,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.35,
+        "balanced_accuracy": 1.0,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.4,
+        "balanced_accuracy": 1.0,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.45,
+        "balanced_accuracy": 0.9838709677419355,
+        "answerable_acceptance": 0.967741935483871,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.5,
+        "balanced_accuracy": 0.9838709677419355,
+        "answerable_acceptance": 0.967741935483871,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.55,
+        "balanced_accuracy": 0.8548387096774194,
+        "answerable_acceptance": 0.7096774193548387,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.6,
+        "balanced_accuracy": 0.8548387096774194,
+        "answerable_acceptance": 0.7096774193548387,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.65,
+        "balanced_accuracy": 0.7419354838709677,
+        "answerable_acceptance": 0.4838709677419355,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.7,
+        "balanced_accuracy": 0.6774193548387097,
+        "answerable_acceptance": 0.3548387096774194,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.75,
+        "balanced_accuracy": 0.6774193548387097,
+        "answerable_acceptance": 0.3548387096774194,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.8,
+        "balanced_accuracy": 0.5806451612903226,
+        "answerable_acceptance": 0.16129032258064516,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.85,
+        "balanced_accuracy": 0.564516129032258,
+        "answerable_acceptance": 0.12903225806451613,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.9,
+        "balanced_accuracy": 0.564516129032258,
+        "answerable_acceptance": 0.12903225806451613,
+        "unanswerable_rejection": 1.0
+      }
+    ]
+  },
+  "hybrid": {
+    "selected": {
+      "threshold": 0.3,
+      "balanced_accuracy": 1.0,
+      "answerable_acceptance": 1.0,
+      "unanswerable_rejection": 1.0
+    },
+    "candidates": [
+      {
+        "threshold": 0.05,
+        "balanced_accuracy": 0.6666666666666666,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.3333333333333333
+      },
+      {
+        "threshold": 0.1,
+        "balanced_accuracy": 0.6666666666666666,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.3333333333333333
+      },
+      {
+        "threshold": 0.15,
+        "balanced_accuracy": 0.75,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.5
+      },
+      {
+        "threshold": 0.2,
+        "balanced_accuracy": 0.8333333333333333,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.6666666666666666
+      },
+      {
+        "threshold": 0.25,
+        "balanced_accuracy": 0.9166666666666667,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 0.8333333333333334
+      },
+      {
+        "threshold": 0.3,
+        "balanced_accuracy": 1.0,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.35,
+        "balanced_accuracy": 1.0,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.4,
+        "balanced_accuracy": 1.0,
+        "answerable_acceptance": 1.0,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.45,
+        "balanced_accuracy": 0.9838709677419355,
+        "answerable_acceptance": 0.967741935483871,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.5,
+        "balanced_accuracy": 0.9838709677419355,
+        "answerable_acceptance": 0.967741935483871,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.55,
+        "balanced_accuracy": 0.8548387096774194,
+        "answerable_acceptance": 0.7096774193548387,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.6,
+        "balanced_accuracy": 0.8548387096774194,
+        "answerable_acceptance": 0.7096774193548387,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.65,
+        "balanced_accuracy": 0.7419354838709677,
+        "answerable_acceptance": 0.4838709677419355,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.7,
+        "balanced_accuracy": 0.6774193548387097,
+        "answerable_acceptance": 0.3548387096774194,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.75,
+        "balanced_accuracy": 0.6774193548387097,
+        "answerable_acceptance": 0.3548387096774194,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.8,
+        "balanced_accuracy": 0.5806451612903226,
+        "answerable_acceptance": 0.16129032258064516,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.85,
+        "balanced_accuracy": 0.564516129032258,
+        "answerable_acceptance": 0.12903225806451613,
+        "unanswerable_rejection": 1.0
+      },
+      {
+        "threshold": 0.9,
+        "balanced_accuracy": 0.564516129032258,
+        "answerable_acceptance": 0.12903225806451613,
+        "unanswerable_rejection": 1.0
+      }
+    ]
+  }
+}

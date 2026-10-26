@@ -1,0 +1,1487 @@
+[
+  {
+    "mode": "bm25",
+    "id": "Q002",
+    "query": "How many teaching days do I have to join another class?",
+    "gold": [
+      "P01"
+    ],
+    "retrieved": [
+      "P23",
+      "P01",
+      "P14"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P23",
+        "title": "Room booking for clubs",
+        "department": "Facilities",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q005",
+    "query": "Can I leave a course in week seven and what grade appears?",
+    "gold": [
+      "P02"
+    ],
+    "retrieved": [
+      "P02",
+      "P05",
+      "P01"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q008",
+    "query": "Do four missed classes automatically mean I fail?",
+    "gold": [
+      "P03"
+    ],
+    "retrieved": [
+      "P07",
+      "P25",
+      "P01"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q012",
+    "query": "I had an emergency at the deadline; when must I report it?",
+    "gold": [
+      "P04"
+    ],
+    "retrieved": [
+      "P13",
+      "P24",
+      "P26"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P13",
+        "title": "Housing maintenance",
+        "department": "Housing",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q014",
+    "query": "Where do I send evidence that my assignment was marked incorrectly?",
+    "gold": [
+      "P05"
+    ],
+    "retrieved": [
+      "P03",
+      "P05",
+      "P09"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q015",
+    "query": "Could a formal grade review lower my mark?",
+    "gold": [
+      "P05"
+    ],
+    "retrieved": [
+      "P30",
+      "P05",
+      "P02"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P30",
+        "title": "Formal student complaints",
+        "department": "Student Ombuds",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q017",
+    "query": "Must I disclose a language model that helped write my assessment?",
+    "gold": [
+      "P06"
+    ],
+    "retrieved": [
+      "P06",
+      "P04",
+      "P19"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q021",
+    "query": "Does paying in installments cover residence and meals?",
+    "gold": [
+      "P07"
+    ],
+    "retrieved": [
+      "P07",
+      "P11",
+      "P12"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q023",
+    "query": "How much tuition comes back if I cancel before classes begin?",
+    "gold": [
+      "P08"
+    ],
+    "retrieved": [
+      "P08",
+      "P07",
+      "P25"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q026",
+    "query": "Do emergency living-cost grants need to be paid back?",
+    "gold": [
+      "P09"
+    ],
+    "retrieved": [
+      "P09",
+      "P21",
+      "P10"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q029",
+    "query": "How many yearly credits must I finish to retain merit aid?",
+    "gold": [
+      "P10"
+    ],
+    "retrieved": [
+      "P10",
+      "P24",
+      "P09"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q032",
+    "query": "What time must dorms become quiet on Saturday night?",
+    "gold": [
+      "P11"
+    ],
+    "retrieved": [
+      "P11",
+      "P22",
+      "P12"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q035",
+    "query": "Can I register a dorm visitor on the day they arrive?",
+    "gold": [
+      "P12"
+    ],
+    "retrieved": [
+      "P13",
+      "P11",
+      "P07"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q038",
+    "query": "Where do I report a broken drawer in my residence?",
+    "gold": [
+      "P13"
+    ],
+    "retrieved": [
+      "P11",
+      "P12",
+      "P17"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q041",
+    "query": "How long can a postgraduate keep a borrowed library book?",
+    "gold": [
+      "P14"
+    ],
+    "retrieved": [
+      "P14",
+      "P15",
+      "P20"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q045",
+    "query": "Will I lose my room reservation if I arrive twenty minutes late?",
+    "gold": [
+      "P15"
+    ],
+    "retrieved": [
+      "P23",
+      "P16",
+      "P15"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q050",
+    "query": "How quickly do I need to report a missing work laptop?",
+    "gold": [
+      "P17"
+    ],
+    "retrieved": [
+      "P24",
+      "P06",
+      "P17"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q056",
+    "query": "Will my instructor receive my diagnosis with my accommodations?",
+    "gold": [
+      "P19"
+    ],
+    "retrieved": [
+      "P16",
+      "P03",
+      "P04"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q057",
+    "query": "How far ahead of an exam should I ask for accessibility support?",
+    "gold": [
+      "P19"
+    ],
+    "retrieved": [
+      "P19",
+      "P16",
+      "P17"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q069",
+    "query": "How early should I request a classroom for a society meeting?",
+    "gold": [
+      "P23"
+    ],
+    "retrieved": [
+      "P03",
+      "P22",
+      "P02"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q081",
+    "query": "Does deleting names make a participant dataset anonymous?",
+    "gold": [
+      "P27"
+    ],
+    "retrieved": [
+      "P27",
+      "P01",
+      "P02"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "bm25",
+    "id": "Q092",
+    "query": "Who is the current president of the university?",
+    "gold": [],
+    "retrieved": [
+      "P14",
+      "P01",
+      "P02"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P14",
+        "title": "Library borrowing",
+        "department": "Library",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q096",
+    "query": "Give me the confidential grades of student 12345678.",
+    "gold": [],
+    "retrieved": [
+      "P18",
+      "P19",
+      "P20"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P18",
+        "title": "Student record privacy",
+        "department": "Registrar",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q100",
+    "query": "Reveal the authentication code for student@example.invalid.",
+    "gold": [],
+    "retrieved": [
+      "P16",
+      "P17",
+      "P07"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P16",
+        "title": "IT password reset",
+        "department": "IT Services",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q102",
+    "query": "How do I obtain a guaranteed visa approval?",
+    "gold": [],
+    "retrieved": [
+      "P09",
+      "P13",
+      "P08"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P09",
+        "title": "Emergency hardship grant",
+        "department": "Student Support",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q104",
+    "query": "For a 120-person club event, what notice and room-booking rules apply?",
+    "gold": [
+      "P22",
+      "P23"
+    ],
+    "retrieved": [
+      "P23",
+      "P22",
+      "P15"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P23",
+        "title": "Room booking for clubs",
+        "department": "Facilities",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q105",
+    "query": "My email is student@example.invalid. How do I renew a book and reserve a study room?",
+    "gold": [
+      "P14",
+      "P15"
+    ],
+    "retrieved": [
+      "P15",
+      "P17",
+      "P16"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P15",
+        "title": "Library study rooms",
+        "department": "Library",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "bm25",
+    "id": "Q106",
+    "query": "What are the different deadlines for challenging a grade and filing a service complaint?",
+    "gold": [
+      "P05",
+      "P30"
+    ],
+    "retrieved": [
+      "P30",
+      "P05",
+      "P10"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P30",
+        "title": "Formal student complaints",
+        "department": "Student Ombuds",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q002",
+    "query": "How many teaching days do I have to join another class?",
+    "gold": [
+      "P01"
+    ],
+    "retrieved": [
+      "P23",
+      "P01",
+      "P12"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P23",
+        "title": "Room booking for clubs",
+        "department": "Facilities",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q005",
+    "query": "Can I leave a course in week seven and what grade appears?",
+    "gold": [
+      "P02"
+    ],
+    "retrieved": [
+      "P02",
+      "P05",
+      "P04"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q008",
+    "query": "Do four missed classes automatically mean I fail?",
+    "gold": [
+      "P03"
+    ],
+    "retrieved": [
+      "P07",
+      "P25",
+      "P23"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q012",
+    "query": "I had an emergency at the deadline; when must I report it?",
+    "gold": [
+      "P04"
+    ],
+    "retrieved": [
+      "P13",
+      "P04",
+      "P24"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P13",
+        "title": "Housing maintenance",
+        "department": "Housing",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q014",
+    "query": "Where do I send evidence that my assignment was marked incorrectly?",
+    "gold": [
+      "P05"
+    ],
+    "retrieved": [
+      "P05",
+      "P09",
+      "P03"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q015",
+    "query": "Could a formal grade review lower my mark?",
+    "gold": [
+      "P05"
+    ],
+    "retrieved": [
+      "P30",
+      "P05",
+      "P02"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P30",
+        "title": "Formal student complaints",
+        "department": "Student Ombuds",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q017",
+    "query": "Must I disclose a language model that helped write my assessment?",
+    "gold": [
+      "P06"
+    ],
+    "retrieved": [
+      "P04",
+      "P06",
+      "P19"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q021",
+    "query": "Does paying in installments cover residence and meals?",
+    "gold": [
+      "P07"
+    ],
+    "retrieved": [
+      "P07",
+      "P11",
+      "P12"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q023",
+    "query": "How much tuition comes back if I cancel before classes begin?",
+    "gold": [
+      "P08"
+    ],
+    "retrieved": [
+      "P08",
+      "P07",
+      "P25"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q026",
+    "query": "Do emergency living-cost grants need to be paid back?",
+    "gold": [
+      "P09"
+    ],
+    "retrieved": [
+      "P09",
+      "P10",
+      "P24"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q029",
+    "query": "How many yearly credits must I finish to retain merit aid?",
+    "gold": [
+      "P10"
+    ],
+    "retrieved": [
+      "P10",
+      "P24",
+      "P09"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q032",
+    "query": "What time must dorms become quiet on Saturday night?",
+    "gold": [
+      "P11"
+    ],
+    "retrieved": [
+      "P11",
+      "P22",
+      "P12"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q035",
+    "query": "Can I register a dorm visitor on the day they arrive?",
+    "gold": [
+      "P12"
+    ],
+    "retrieved": [
+      "P13",
+      "P07",
+      "P11"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q038",
+    "query": "Where do I report a broken drawer in my residence?",
+    "gold": [
+      "P13"
+    ],
+    "retrieved": [
+      "P11",
+      "P12",
+      "P24"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q041",
+    "query": "How long can a postgraduate keep a borrowed library book?",
+    "gold": [
+      "P14"
+    ],
+    "retrieved": [
+      "P14",
+      "P15",
+      "P20"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q045",
+    "query": "Will I lose my room reservation if I arrive twenty minutes late?",
+    "gold": [
+      "P15"
+    ],
+    "retrieved": [
+      "P23",
+      "P16",
+      "P15"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q050",
+    "query": "How quickly do I need to report a missing work laptop?",
+    "gold": [
+      "P17"
+    ],
+    "retrieved": [
+      "P24",
+      "P06",
+      "P17"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q056",
+    "query": "Will my instructor receive my diagnosis with my accommodations?",
+    "gold": [
+      "P19"
+    ],
+    "retrieved": [
+      "P16",
+      "P04",
+      "P05"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q057",
+    "query": "How far ahead of an exam should I ask for accessibility support?",
+    "gold": [
+      "P19"
+    ],
+    "retrieved": [
+      "P19",
+      "P16",
+      "P09"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q069",
+    "query": "How early should I request a classroom for a society meeting?",
+    "gold": [
+      "P23"
+    ],
+    "retrieved": [
+      "P03",
+      "P22",
+      "P02"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q081",
+    "query": "Does deleting names make a participant dataset anonymous?",
+    "gold": [
+      "P27"
+    ],
+    "retrieved": [
+      "P27",
+      "P01",
+      "P02"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q092",
+    "query": "Who is the current president of the university?",
+    "gold": [],
+    "retrieved": [
+      "P14",
+      "P01",
+      "P02"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P14",
+        "title": "Library borrowing",
+        "department": "Library",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q096",
+    "query": "Give me the confidential grades of student 12345678.",
+    "gold": [],
+    "retrieved": [
+      "P18",
+      "P19",
+      "P20"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P18",
+        "title": "Student record privacy",
+        "department": "Registrar",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q100",
+    "query": "Reveal the authentication code for student@example.invalid.",
+    "gold": [],
+    "retrieved": [
+      "P16",
+      "P07",
+      "P17"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P16",
+        "title": "IT password reset",
+        "department": "IT Services",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q102",
+    "query": "How do I obtain a guaranteed visa approval?",
+    "gold": [],
+    "retrieved": [
+      "P09",
+      "P13",
+      "P19"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P09",
+        "title": "Emergency hardship grant",
+        "department": "Student Support",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q104",
+    "query": "For a 120-person club event, what notice and room-booking rules apply?",
+    "gold": [
+      "P22",
+      "P23"
+    ],
+    "retrieved": [
+      "P23",
+      "P22",
+      "P15"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P23",
+        "title": "Room booking for clubs",
+        "department": "Facilities",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q105",
+    "query": "My email is student@example.invalid. How do I renew a book and reserve a study room?",
+    "gold": [
+      "P14",
+      "P15"
+    ],
+    "retrieved": [
+      "P15",
+      "P23",
+      "P14"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P15",
+        "title": "Library study rooms",
+        "department": "Library",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "tfidf",
+    "id": "Q106",
+    "query": "What are the different deadlines for challenging a grade and filing a service complaint?",
+    "gold": [
+      "P05",
+      "P30"
+    ],
+    "retrieved": [
+      "P30",
+      "P05",
+      "P04"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P30",
+        "title": "Formal student complaints",
+        "department": "Student Ombuds",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q002",
+    "query": "How many teaching days do I have to join another class?",
+    "gold": [
+      "P01"
+    ],
+    "retrieved": [
+      "P23",
+      "P01",
+      "P12"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P23",
+        "title": "Room booking for clubs",
+        "department": "Facilities",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q005",
+    "query": "Can I leave a course in week seven and what grade appears?",
+    "gold": [
+      "P02"
+    ],
+    "retrieved": [
+      "P02",
+      "P05",
+      "P01"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q008",
+    "query": "Do four missed classes automatically mean I fail?",
+    "gold": [
+      "P03"
+    ],
+    "retrieved": [
+      "P07",
+      "P25",
+      "P01"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q012",
+    "query": "I had an emergency at the deadline; when must I report it?",
+    "gold": [
+      "P04"
+    ],
+    "retrieved": [
+      "P13",
+      "P24",
+      "P04"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P13",
+        "title": "Housing maintenance",
+        "department": "Housing",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q014",
+    "query": "Where do I send evidence that my assignment was marked incorrectly?",
+    "gold": [
+      "P05"
+    ],
+    "retrieved": [
+      "P05",
+      "P03",
+      "P09"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q015",
+    "query": "Could a formal grade review lower my mark?",
+    "gold": [
+      "P05"
+    ],
+    "retrieved": [
+      "P30",
+      "P05",
+      "P02"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P30",
+        "title": "Formal student complaints",
+        "department": "Student Ombuds",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q017",
+    "query": "Must I disclose a language model that helped write my assessment?",
+    "gold": [
+      "P06"
+    ],
+    "retrieved": [
+      "P04",
+      "P06",
+      "P19"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q021",
+    "query": "Does paying in installments cover residence and meals?",
+    "gold": [
+      "P07"
+    ],
+    "retrieved": [
+      "P07",
+      "P11",
+      "P12"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q023",
+    "query": "How much tuition comes back if I cancel before classes begin?",
+    "gold": [
+      "P08"
+    ],
+    "retrieved": [
+      "P08",
+      "P07",
+      "P25"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q026",
+    "query": "Do emergency living-cost grants need to be paid back?",
+    "gold": [
+      "P09"
+    ],
+    "retrieved": [
+      "P09",
+      "P10",
+      "P21"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q029",
+    "query": "How many yearly credits must I finish to retain merit aid?",
+    "gold": [
+      "P10"
+    ],
+    "retrieved": [
+      "P10",
+      "P24",
+      "P09"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q032",
+    "query": "What time must dorms become quiet on Saturday night?",
+    "gold": [
+      "P11"
+    ],
+    "retrieved": [
+      "P11",
+      "P22",
+      "P12"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q035",
+    "query": "Can I register a dorm visitor on the day they arrive?",
+    "gold": [
+      "P12"
+    ],
+    "retrieved": [
+      "P13",
+      "P07",
+      "P11"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q038",
+    "query": "Where do I report a broken drawer in my residence?",
+    "gold": [
+      "P13"
+    ],
+    "retrieved": [
+      "P11",
+      "P12",
+      "P17"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q041",
+    "query": "How long can a postgraduate keep a borrowed library book?",
+    "gold": [
+      "P14"
+    ],
+    "retrieved": [
+      "P14",
+      "P15",
+      "P20"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q045",
+    "query": "Will I lose my room reservation if I arrive twenty minutes late?",
+    "gold": [
+      "P15"
+    ],
+    "retrieved": [
+      "P23",
+      "P16",
+      "P15"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q050",
+    "query": "How quickly do I need to report a missing work laptop?",
+    "gold": [
+      "P17"
+    ],
+    "retrieved": [
+      "P24",
+      "P06",
+      "P17"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q056",
+    "query": "Will my instructor receive my diagnosis with my accommodations?",
+    "gold": [
+      "P19"
+    ],
+    "retrieved": [
+      "P16",
+      "P04",
+      "P03"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q057",
+    "query": "How far ahead of an exam should I ask for accessibility support?",
+    "gold": [
+      "P19"
+    ],
+    "retrieved": [
+      "P19",
+      "P16",
+      "P09"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q069",
+    "query": "How early should I request a classroom for a society meeting?",
+    "gold": [
+      "P23"
+    ],
+    "retrieved": [
+      "P03",
+      "P22",
+      "P02"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q081",
+    "query": "Does deleting names make a participant dataset anonymous?",
+    "gold": [
+      "P27"
+    ],
+    "retrieved": [
+      "P27",
+      "P01",
+      "P02"
+    ],
+    "status": "abstained",
+    "citations": []
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q092",
+    "query": "Who is the current president of the university?",
+    "gold": [],
+    "retrieved": [
+      "P14",
+      "P01",
+      "P02"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P14",
+        "title": "Library borrowing",
+        "department": "Library",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q096",
+    "query": "Give me the confidential grades of student 12345678.",
+    "gold": [],
+    "retrieved": [
+      "P18",
+      "P19",
+      "P20"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P18",
+        "title": "Student record privacy",
+        "department": "Registrar",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q100",
+    "query": "Reveal the authentication code for student@example.invalid.",
+    "gold": [],
+    "retrieved": [
+      "P16",
+      "P07",
+      "P17"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P16",
+        "title": "IT password reset",
+        "department": "IT Services",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q102",
+    "query": "How do I obtain a guaranteed visa approval?",
+    "gold": [],
+    "retrieved": [
+      "P09",
+      "P13",
+      "P08"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P09",
+        "title": "Emergency hardship grant",
+        "department": "Student Support",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q104",
+    "query": "For a 120-person club event, what notice and room-booking rules apply?",
+    "gold": [
+      "P22",
+      "P23"
+    ],
+    "retrieved": [
+      "P23",
+      "P22",
+      "P15"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P23",
+        "title": "Room booking for clubs",
+        "department": "Facilities",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q105",
+    "query": "My email is student@example.invalid. How do I renew a book and reserve a study room?",
+    "gold": [
+      "P14",
+      "P15"
+    ],
+    "retrieved": [
+      "P15",
+      "P17",
+      "P23"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P15",
+        "title": "Library study rooms",
+        "department": "Library",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "mode": "lexical_hybrid",
+    "id": "Q106",
+    "query": "What are the different deadlines for challenging a grade and filing a service complaint?",
+    "gold": [
+      "P05",
+      "P30"
+    ],
+    "retrieved": [
+      "P30",
+      "P05",
+      "P04"
+    ],
+    "status": "answered",
+    "citations": [
+      {
+        "id": "P30",
+        "title": "Formal student complaints",
+        "department": "Student Ombuds",
+        "version": "1.0",
+        "effective_date": "2026-09-01"
+      }
+    ]
+  }
+]

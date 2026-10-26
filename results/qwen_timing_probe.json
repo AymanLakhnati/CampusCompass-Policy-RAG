@@ -1,0 +1,333 @@
+{
+  "experiment": "Actual deterministic local generation; exact-source gate",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "device": "cuda",
+  "timestamp_utc": "2026-10-26T10:07:49.741257+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "corpus_sha256": "98352d333d4dc58aa24d529903f5b438d56791b2136de788da1f9cee6d41bd89",
+  "retrieval_mode": "bm25",
+  "abstention_threshold": 0.35,
+  "split": "dev",
+  "n": 6,
+  "load_seconds": 10.748,
+  "generation_attempts": 6,
+  "accepted_answers": 4,
+  "correct_cited_policy_among_accepted": 4,
+  "answer_coverage": 0.6666666666666666,
+  "mean_generation_ms": 1819.241,
+  "notes": [
+    "No answer quality or entailment claim follows from exact-substring support.",
+    "Expected term checks are synthetic checks, not a validated human correctness rating.",
+    "Raw model output is retained only for public synthetic evaluation questions. The app does not log live questions."
+  ],
+  "outputs": [
+    {
+      "id": "Q001",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P01"
+      ],
+      "expected_terms": [
+        "day 5",
+        "day 10"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.6667,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "What is the course add deadline?",
+        "latency_ms": 2064.135,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 8.391811
+          },
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 3.155039
+          },
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 2.688204
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 2060.794,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q004",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P02"
+      ],
+      "expected_terms": [
+        "week 8",
+        "W"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.5,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "What is the deadline to withdraw?",
+        "latency_ms": 543.687,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 4.533924
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 3.222263
+          },
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 3.155039
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 543.189,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q007",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P03"
+      ],
+      "expected_terms": [
+        "fourth",
+        "five working days"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "A fourth unexcused absence triggers an advisor meeting. [P03]",
+        "citations": [
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "department": "Academic Affairs",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.6,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "What happens after four unexcused absences?",
+        "latency_ms": 1923.031,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "score": 8.709447
+          },
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 1.682984
+          },
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 1.101679
+          }
+        ],
+        "raw_model_output": "A fourth unexcused absence triggers an advisor meeting.",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 1922.538,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q010",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P04"
+      ],
+      "expected_terms": [
+        "48 hours",
+        "seven",
+        "two working days"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "A student requesting an assessment extension should apply at least 48 hours before the deadline with an explanation. [P04]",
+        "citations": [
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "department": "Academic Affairs",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.6667,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "How do I request an assessment extension?",
+        "latency_ms": 3095.274,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 9.533779
+          },
+          {
+            "id": "P19",
+            "title": "Accessibility adjustments",
+            "score": 4.392669
+          },
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "score": 3.028669
+          }
+        ],
+        "raw_model_output": "A student requesting an assessment extension should apply at least 48 hours before the deadline with an explanation.",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 3094.769,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q013",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P05"
+      ],
+      "expected_terms": [
+        "ten working days",
+        "chair"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "ten working days [P05]",
+        "citations": [
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "department": "Academic Affairs",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.5,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "How long do I have to appeal a grade?",
+        "latency_ms": 968.046,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "score": 9.111071
+          },
+          {
+            "id": "P30",
+            "title": "Formal student complaints",
+            "score": 4.752095
+          },
+          {
+            "id": "P12",
+            "title": "Overnight guests",
+            "score": 2.993976
+          }
+        ],
+        "raw_model_output": "ten working days",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 967.654,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q016",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P06"
+      ],
+      "expected_terms": [
+        "explicitly",
+        "declare"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "generative AI use is permitted only when the assessment instructions explicitly allow it. [P06]",
+        "citations": [
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "department": "Academic Integrity Office",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.75,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Is generative AI allowed for assignments?",
+        "latency_ms": 2326.903,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "score": 10.738078
+          },
+          {
+            "id": "P14",
+            "title": "Library borrowing",
+            "score": 2.488978
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 0.0
+          }
+        ],
+        "raw_model_output": "generative AI use is permitted only when the assessment instructions explicitly allow it.",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 2326.502,
+        "generation_supported": true
+      }
+    }
+  ],
+  "started_utc": "2026-10-26T10:07:10.562609+00:00",
+  "elapsed_seconds": 39.316,
+  "median_generation_ms": 1991.666
+}

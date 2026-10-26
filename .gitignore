@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+cache/
+models/
+build/
+deliverables/
+results/rerun*/
+.env
+*.log
+*.zip
+scripts/publish_github.py

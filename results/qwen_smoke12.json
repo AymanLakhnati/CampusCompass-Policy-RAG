@@ -1,0 +1,573 @@
+{
+  "experiment": "Actual deterministic local generation; exact-source gate",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "device": "cuda",
+  "timestamp_utc": "2026-10-26T07:37:15.717855+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "corpus_sha256": "98352d333d4dc58aa24d529903f5b438d56791b2136de788da1f9cee6d41bd89",
+  "retrieval_mode": "bm25",
+  "abstention_threshold": 0.22,
+  "split": "test",
+  "n": 12,
+  "load_seconds": 79.154,
+  "generation_attempts": 10,
+  "accepted_answers": 1,
+  "correct_cited_policy_among_accepted": 1,
+  "answer_coverage": 0.08333333333333333,
+  "mean_generation_ms": 961.7017,
+  "notes": [
+    "No answer quality or entailment claim follows from exact-substring support.",
+    "Expected term checks are synthetic checks, not a validated human correctness rating.",
+    "Raw model output is retained only for public synthetic evaluation questions. The app does not log live questions."
+  ],
+  "outputs": [
+    {
+      "id": "Q002",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P01"
+      ],
+      "expected_terms": [
+        "day 5",
+        "day 10"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.4286,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "How many teaching days do I have to join another class?",
+        "latency_ms": 1877.861,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P23",
+            "title": "Room booking for clubs",
+            "score": 4.872112
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 4.383142
+          },
+          {
+            "id": "P14",
+            "title": "Library borrowing",
+            "score": 3.049875
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 1873.874,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q003",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P01"
+      ],
+      "expected_terms": [
+        "day 5",
+        "day 10"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "17:00 on teaching day 5 [P01]",
+        "citations": [
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "department": "Registrar",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.8,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "When can I drop a class without it showing on my transcript?",
+        "latency_ms": 1858.244,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 12.407937
+          },
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 2.839918
+          },
+          {
+            "id": "P25",
+            "title": "Career advising cancellations",
+            "score": 2.397806
+          }
+        ],
+        "raw_model_output": "17:00 on teaching day 5",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 1857.791,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q005",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P02"
+      ],
+      "expected_terms": [
+        "week 8",
+        "W"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.3333,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Can I leave a course in week seven and what grade appears?",
+        "latency_ms": 558.113,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 7.396221
+          },
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "score": 4.87417
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 3.211444
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 557.502,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q006",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P02"
+      ],
+      "expected_terms": [
+        "week 8",
+        "W"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.5714,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Who decides exceptional withdrawal requests after the eighth week?",
+        "latency_ms": 1959.412,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 13.764842
+          },
+          {
+            "id": "P08",
+            "title": "Tuition refund",
+            "score": 3.628218
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 3.222263
+          }
+        ],
+        "raw_model_output": "The Academic Review Panel determines exceptional withdrawal requests after the eighth week.",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 1958.741,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q008",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P03"
+      ],
+      "expected_terms": [
+        "fourth",
+        "five working days"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "I could not find enough support in the demonstration policies. Please contact the relevant university office; do not rely on a guessed answer.",
+        "citations": [],
+        "confidence": 0.1667,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Do four missed classes automatically mean I fail?",
+        "latency_ms": 0.316,
+        "mode": "bm25",
+        "answer_method": "local qwen with evidence gate",
+        "retrieved": [
+          {
+            "id": "P07",
+            "title": "Tuition installment plan",
+            "score": 2.488978
+          },
+          {
+            "id": "P25",
+            "title": "Career advising cancellations",
+            "score": 2.397806
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 2.286767
+          }
+        ],
+        "generation_attempted": false,
+        "raw_model_output": null,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      }
+    },
+    {
+      "id": "Q009",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P03"
+      ],
+      "expected_terms": [
+        "fourth",
+        "five working days"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.4286,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "How soon after returning must I provide absence evidence?",
+        "latency_ms": 766.547,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "score": 8.72617
+          },
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "score": 4.509658
+          },
+          {
+            "id": "P12",
+            "title": "Overnight guests",
+            "score": 4.499669
+          }
+        ],
+        "raw_model_output": "5 working days",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 766.151,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q011",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P04"
+      ],
+      "expected_terms": [
+        "48 hours",
+        "seven",
+        "two working days"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.6,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Can an instructor give me a seven-day extension?",
+        "latency_ms": 514.336,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 11.237791
+          },
+          {
+            "id": "P15",
+            "title": "Library study rooms",
+            "score": 3.628218
+          },
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "score": 2.263945
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 513.922,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q012",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P04"
+      ],
+      "expected_terms": [
+        "48 hours",
+        "seven",
+        "two working days"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.4,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "I had an emergency at the deadline; when must I report it?",
+        "latency_ms": 546.846,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P13",
+            "title": "Housing maintenance",
+            "score": 4.018658
+          },
+          {
+            "id": "P24",
+            "title": "Internship credit",
+            "score": 3.699922
+          },
+          {
+            "id": "P26",
+            "title": "Laboratory safety induction",
+            "score": 3.593398
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 546.394,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q014",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P05"
+      ],
+      "expected_terms": [
+        "ten working days",
+        "chair"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "I could not find enough support in the demonstration policies. Please contact the relevant university office; do not rely on a guessed answer.",
+        "citations": [],
+        "confidence": 0.2,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Where do I send evidence that my assignment was marked incorrectly?",
+        "latency_ms": 0.426,
+        "mode": "bm25",
+        "answer_method": "local qwen with evidence gate",
+        "retrieved": [
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "score": 2.0031
+          },
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "score": 1.9639
+          },
+          {
+            "id": "P09",
+            "title": "Emergency hardship grant",
+            "score": 1.889931
+          }
+        ],
+        "generation_attempted": false,
+        "raw_model_output": null,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      }
+    },
+    {
+      "id": "Q015",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P05"
+      ],
+      "expected_terms": [
+        "ten working days",
+        "chair"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.4,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Could a formal grade review lower my mark?",
+        "latency_ms": 518.138,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P30",
+            "title": "Formal student complaints",
+            "score": 7.261771
+          },
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "score": 6.838071
+          },
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 2.176905
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 517.553,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q017",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P06"
+      ],
+      "expected_terms": [
+        "explicitly",
+        "declare"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.2857,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Must I disclose a language model that helped write my assessment?",
+        "latency_ms": 502.172,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "score": 4.392669
+          },
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 3.670669
+          },
+          {
+            "id": "P19",
+            "title": "Accessibility adjustments",
+            "score": 3.028669
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 501.439,
+        "generation_supported": false
+      }
+    },
+    {
+      "id": "Q018",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P06"
+      ],
+      "expected_terms": [
+        "explicitly",
+        "declare"
+      ],
+      "response": {
+        "status": "abstained",
+        "answer": "The local language model could not produce a verifiable excerpt. Please inspect the retrieved policy or contact the relevant office.",
+        "citations": [],
+        "confidence": 0.6667,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Does suspected AI misuse lead to automatic expulsion?",
+        "latency_ms": 524.13,
+        "mode": "bm25",
+        "answer_method": "local qwen with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "score": 13.649042
+          },
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "score": 2.613178
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 0.0
+          }
+        ],
+        "raw_model_output": "UNKNOWN",
+        "generation_attempted": true,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "generation_ms": 523.65,
+        "generation_supported": false
+      }
+    }
+  ]
+}

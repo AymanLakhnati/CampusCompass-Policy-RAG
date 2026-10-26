@@ -1,0 +1,61 @@
+{
+  "finding": "One large elapsed-time outlier in FLAN full-test generation coincides with a similarly long Qwen model-loading interval. Formula is (perf_counter difference)*1000 exactly once. Process suspension or scheduling pause is plausible; root cause is unverified. Raw experiment values are retained unchanged. Do not interpret the raw FLAN arithmetic mean or Qwen loading duration as normal inference performance.",
+  "runs": {
+    "llm_experiment": {
+      "n_generations": 49,
+      "median_generation_ms": 336.084,
+      "mean_generation_ms_raw": 176794.4576122449,
+      "largest_generations": [
+        [
+          "Q104",
+          8634491.889
+        ],
+        [
+          "Q105",
+          4073.309
+        ],
+        [
+          "Q042",
+          2207.683
+        ],
+        [
+          "Q033",
+          1814.315
+        ],
+        [
+          "Q106",
+          1350.784
+        ]
+      ],
+      "load_seconds_raw": 7.641
+    },
+    "qwen_experiment": {
+      "n_generations": 49,
+      "median_generation_ms": 595.831,
+      "mean_generation_ms_raw": 1346.9197551020409,
+      "largest_generations": [
+        [
+          "Q072",
+          7613.129
+        ],
+        [
+          "Q002",
+          6151.801
+        ],
+        [
+          "Q030",
+          3499.57
+        ],
+        [
+          "Q053",
+          3405.798
+        ],
+        [
+          "Q063",
+          3197.137
+        ]
+      ],
+      "load_seconds_raw": 8638.835
+    }
+  }
+}

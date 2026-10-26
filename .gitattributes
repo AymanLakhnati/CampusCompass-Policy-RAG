@@ -1,0 +1,9 @@
+# Preserve evidence bytes across Windows and Linux so stored SHA256 values match.
+/data/** -text
+/results/** -text
+*.py text eol=lf
+*.js text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.ps1 text eol=crlf

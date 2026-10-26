@@ -1,0 +1,349 @@
+{
+  "experiment": "Actual deterministic local generation; exact-source gate",
+  "model_id": "google/flan-t5-small",
+  "model_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "device": "cpu",
+  "timestamp_utc": "2026-10-26T10:06:18.593454+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "corpus_sha256": "98352d333d4dc58aa24d529903f5b438d56791b2136de788da1f9cee6d41bd89",
+  "retrieval_mode": "bm25",
+  "abstention_threshold": 0.35,
+  "split": "dev",
+  "n": 6,
+  "load_seconds": 7.498,
+  "generation_attempts": 6,
+  "accepted_answers": 6,
+  "correct_cited_policy_among_accepted": 6,
+  "answer_coverage": 1.0,
+  "mean_generation_ms": 500.9191666666667,
+  "notes": [
+    "No answer quality or entailment claim follows from exact-substring support.",
+    "Expected term checks are synthetic checks, not a validated human correctness rating.",
+    "Raw model output is retained only for public synthetic evaluation questions. The app does not log live questions."
+  ],
+  "outputs": [
+    {
+      "id": "Q001",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P01"
+      ],
+      "expected_terms": [
+        "day 5",
+        "day 10"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "17:00 on teaching day 5 [P01]",
+        "citations": [
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "department": "Registrar",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.6667,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "What is the course add deadline?",
+        "latency_ms": 1058.074,
+        "mode": "bm25",
+        "answer_method": "local flan with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 8.391811
+          },
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 3.155039
+          },
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 2.688204
+          }
+        ],
+        "raw_model_output": "17:00 on teaching day 5",
+        "generation_attempted": true,
+        "model": "google/flan-t5-small",
+        "model_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "generation_ms": 1054.538,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q004",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P02"
+      ],
+      "expected_terms": [
+        "week 8",
+        "W"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "drop period [P02]",
+        "citations": [
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "department": "Registrar",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.5,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "What is the deadline to withdraw?",
+        "latency_ms": 235.678,
+        "mode": "bm25",
+        "answer_method": "local flan with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 4.533924
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 3.222263
+          },
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 3.155039
+          }
+        ],
+        "raw_model_output": "drop period",
+        "generation_attempted": true,
+        "model": "google/flan-t5-small",
+        "model_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "generation_ms": 235.23,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q007",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P03"
+      ],
+      "expected_terms": [
+        "fourth",
+        "five working days"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "an advisor meeting [P03]",
+        "citations": [
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "department": "Academic Affairs",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.6,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "What happens after four unexcused absences?",
+        "latency_ms": 285.984,
+        "mode": "bm25",
+        "answer_method": "local flan with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P03",
+            "title": "Attendance and absence",
+            "score": 8.709447
+          },
+          {
+            "id": "P02",
+            "title": "Course withdrawal",
+            "score": 1.682984
+          },
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 1.101679
+          }
+        ],
+        "raw_model_output": "an advisor meeting",
+        "generation_attempted": true,
+        "model": "google/flan-t5-small",
+        "model_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "generation_ms": 285.477,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q010",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P04"
+      ],
+      "expected_terms": [
+        "48 hours",
+        "seven",
+        "two working days"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "apply at least 48 hours before the deadline with an explanation [P04]",
+        "citations": [
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "department": "Academic Affairs",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.6667,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "How do I request an assessment extension?",
+        "latency_ms": 595.156,
+        "mode": "bm25",
+        "answer_method": "local flan with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P04",
+            "title": "Assessment extension",
+            "score": 9.533779
+          },
+          {
+            "id": "P19",
+            "title": "Accessibility adjustments",
+            "score": 4.392669
+          },
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "score": 3.028669
+          }
+        ],
+        "raw_model_output": "apply at least 48 hours before the deadline with an explanation",
+        "generation_attempted": true,
+        "model": "google/flan-t5-small",
+        "model_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "generation_ms": 594.663,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q013",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P05"
+      ],
+      "expected_terms": [
+        "ten working days",
+        "chair"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "within ten working days [P05]",
+        "citations": [
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "department": "Academic Affairs",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.5,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "How long do I have to appeal a grade?",
+        "latency_ms": 369.887,
+        "mode": "bm25",
+        "answer_method": "local flan with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P05",
+            "title": "Grade appeal",
+            "score": 9.111071
+          },
+          {
+            "id": "P30",
+            "title": "Formal student complaints",
+            "score": 4.752095
+          },
+          {
+            "id": "P12",
+            "title": "Overnight guests",
+            "score": 2.993976
+          }
+        ],
+        "raw_model_output": "within ten working days",
+        "generation_attempted": true,
+        "model": "google/flan-t5-small",
+        "model_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "generation_ms": 369.413,
+        "generation_supported": true
+      }
+    },
+    {
+      "id": "Q016",
+      "expected_answerable": true,
+      "relevant_ids": [
+        "P06"
+      ],
+      "expected_terms": [
+        "explicitly",
+        "declare"
+      ],
+      "response": {
+        "status": "answered",
+        "answer": "only when the assessment instructions explicitly allow it [P06]",
+        "citations": [
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "department": "Academic Integrity Office",
+            "version": "1.0",
+            "effective_date": "2026-09-01"
+          }
+        ],
+        "confidence": 0.75,
+        "confidence_definition": "Fraction of content query tokens present in highest-ranked policy; not a probability.",
+        "redacted_query": "Is generative AI allowed for assignments?",
+        "latency_ms": 466.785,
+        "mode": "bm25",
+        "answer_method": "local flan with exact-source gate",
+        "retrieved": [
+          {
+            "id": "P06",
+            "title": "Academic integrity and AI",
+            "score": 10.738078
+          },
+          {
+            "id": "P14",
+            "title": "Library borrowing",
+            "score": 2.488978
+          },
+          {
+            "id": "P01",
+            "title": "Course add and drop",
+            "score": 0.0
+          }
+        ],
+        "raw_model_output": "only when the assessment instructions explicitly allow it",
+        "generation_attempted": true,
+        "model": "google/flan-t5-small",
+        "model_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "generation_ms": 466.194,
+        "generation_supported": true
+      }
+    }
+  ],
+  "started_utc": "2026-10-26T10:05:49.640198+00:00",
+  "elapsed_seconds": 29.075,
+  "median_generation_ms": 417.8035
+}

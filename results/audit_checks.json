@@ -1,0 +1,28 @@
+{
+  "method": "Read-only recomputation of saved predictions; no retrieval or generation inference.",
+  "p95_convention": "Empirical nearest rank ceil(.95*n)-1, zero-based; original floor quantile corrected without reinference.",
+  "checks": [
+    "lexical/bm25: all summary values recompute exactly; P95 monotonic; predictions hashed",
+    "lexical/tfidf: all summary values recompute exactly; P95 monotonic; predictions hashed",
+    "lexical/lexical_hybrid: all summary values recompute exactly; P95 monotonic; predictions hashed",
+    "neural/dense: all summary values recompute exactly; P95 monotonic; predictions hashed",
+    "neural/hybrid: all summary values recompute exactly; P95 monotonic; predictions hashed",
+    "challenge/bm25: all summary values recompute exactly; P95 monotonic; predictions hashed",
+    "challenge/hybrid: all summary values recompute exactly; P95 monotonic; predictions hashed",
+    "llm_experiment.json: 69 original TEST IDs, 49 generation attempts, 28 accepted, 26 gold-policy citations; all counts/timing means/exact-source gates recompute",
+    "qwen_experiment.json: 69 original TEST IDs, 49 generation attempts, 9 accepted, 9 gold-policy citations; all counts/timing means/exact-source gates recompute"
+  ],
+  "preserved_prediction_sha256": {
+    "results\\lexical\\test_predictions_bm25.jsonl": "5cd9737ab2ba8f2dd84300da62075f1ba468a548fef2f127cdd780b4ea65e78c",
+    "results\\lexical\\test_predictions_tfidf.jsonl": "37b90b79c2f989005f64a6b1b36e4f4d25f90b37ad4be7b0860250972619bc1e",
+    "results\\lexical\\test_predictions_lexical_hybrid.jsonl": "8515f7df7865b37dd27b85aea1f0db839f7859be433f8d8f8c82e3320b4b1da0",
+    "results\\neural\\test_predictions_dense.jsonl": "d11932754dd3498bef48fad53998679f29ae097fb5952f1b34db9017d1af77c8",
+    "results\\neural\\test_predictions_hybrid.jsonl": "f5fadb54f5647c61951bfacd2d6b094e10b89fd19c83b3092beb23f4f0d67c9c",
+    "results\\challenge\\predictions_bm25.jsonl": "cd9292081d95fb777220348a5f41e37188e0fc823bbc1adeb31ea5dc496b8a16",
+    "results\\challenge\\predictions_hybrid.jsonl": "0370903497cd04fa538ed0336dc0a318100b600683aca9aa1c70a0c9076e1610",
+    "results\\llm_experiment.json": "24e0a6411e8802c8a3feccc6c8bf122703f501993c551bed0bb37059f842d1e8",
+    "results\\qwen_experiment.json": "b0c16488eb0cef4e9ca224f7c8f357e8ff13e2209980eac53fb17182cfd162ee"
+  },
+  "corpus_sha256": "98352d333d4dc58aa24d529903f5b438d56791b2136de788da1f9cee6d41bd89",
+  "benchmark_sha256": "8f3e29c5f2de4acc2f0f0baebd7503be9729c617e98e8ef7d336b2bee42f6e64"
+}

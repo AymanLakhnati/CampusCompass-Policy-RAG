@@ -1,0 +1,19 @@
+name: Reproducibility checks
+on: [push, pull_request]
+jobs:
+  default-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Core and evaluator tests
+        run: python -m unittest discover -s tests -v
+      - name: Web initialization regression
+        run: node tests/check_web_init.js
+      - name: Saved experiment consistency
+        run: python scripts/audit_results.py

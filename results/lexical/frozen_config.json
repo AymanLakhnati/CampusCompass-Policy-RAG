@@ -1,0 +1,18 @@
+{
+  "provenance": {
+    "corpus_sha256": "98352d333d4dc58aa24d529903f5b438d56791b2136de788da1f9cee6d41bd89",
+    "benchmark_sha256": "8f3e29c5f2de4acc2f0f0baebd7503be9729c617e98e8ef7d336b2bee42f6e64",
+    "seed": 42,
+    "dev_n": 37,
+    "test_n": 69,
+    "test_use": "One evaluation pass per mode after dev-only threshold selection. Same project authors wrote corpus and benchmark; not independent validation.",
+    "answer_method": "deterministic verbatim extractive baseline; optional LLM not scored here",
+    "latency": "Wall-clock answer() time; model/index warmup excluded; sequential local runs; hardware-specific.",
+    "metric_caveats": "Sentence support is verbatim membership, not entailment or relevance. Topic-term fraction is a broad topic diagnostic, not exact match or correctness. Macro retrieval recall uses answerable queries only. Bootstrap CIs are query-level percentile intervals, small authored sample, not a population guarantee."
+  },
+  "thresholds": {
+    "bm25": 0.35,
+    "tfidf": 0.35,
+    "lexical_hybrid": 0.35
+  }
+}
