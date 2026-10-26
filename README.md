@@ -25,6 +25,10 @@ Open [the local demo](http://127.0.0.1:8765). Keep the terminal running.
 Choose a question, inspect the answer and source, then compare the retrieval
 methods and optional answer engines. `Ctrl+C` stops the server.
 
+Local verification passes 18 Python tests, the web initialization regression,
+and nine saved-results consistency groups. The hosted workflow did not start;
+no hosted CI pass is claimed.
+
 ```powershell
 python app.py --query "How do I appeal a grade?"
 python -m unittest discover -s tests -v
