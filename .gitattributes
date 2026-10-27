@@ -12,3 +12,6 @@
 /src/campuscompass/llm.py -text
 /src/campuscompass/engine_v1.py -text
 /src/campuscompass/llm_v1.py -text
+# These must follow generic Markdown rules: frozen evidence includes Markdown.
+/data/** -text
+/results/** -text
