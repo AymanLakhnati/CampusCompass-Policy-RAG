@@ -1,0 +1,46 @@
+{
+  "engine_version": "2.0",
+  "thresholds": {
+    "bm25": 0.35,
+    "tfidf": 0.35,
+    "lexical_hybrid": 0.35,
+    "dense": 0.425,
+    "hybrid": 0.425
+  },
+  "engine_sha256": "3064e03e50bf8190463013b849853e35e6ad8d49b4f1b7eadf4cf23dd756f0b3",
+  "corpus_sha256": "98352d333d4dc58aa24d529903f5b438d56791b2136de788da1f9cee6d41bd89",
+  "benchmark_sha256": "8f3e29c5f2de4acc2f0f0baebd7503be9729c617e98e8ef7d336b2bee42f6e64",
+  "audit_sha256": "f4e5f0c738ad71f5d5cfe0e7b2f077e6b05bb9f0b2b61168a58e26c1a3fc28c2",
+  "calibration": {
+    "split": "dev",
+    "n": 37,
+    "grid": [
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.3,
+      0.325,
+      0.35,
+      0.375,
+      0.4,
+      0.425,
+      0.45,
+      0.475,
+      0.5,
+      0.525,
+      0.55,
+      0.575,
+      0.6
+    ],
+    "objective": "Maximize balanced answerability accuracy; ties: unsupported rejection, complete gold evidence coverage, then lower threshold.",
+    "method": "DEV inference once at threshold0; simulate only pass/refusal from minimum facet confidence. Engineer confirmed threshold does not change facets/ranking/source choices; all selected sources are identical whenever all facets pass.",
+    "test_policy": "V1 TEST was observed during V1 engineering. Reused TEST is regression only. New audit questions were frozen before V2 results and withheld from implementation engineer; same project team, not externally independent."
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "inherited_engine_v1_sha256": "7df8af33dd63ec94c2cc1b414e669e619bd978a55b707c07487d41146b565009",
+  "provenance_note": "Inherited V1 source hash appended during final reproducibility audit; byte-identical to the original pre-V2 snapshot recorded in audit_freeze.json. No settings, source, predictions or results changed."
+}

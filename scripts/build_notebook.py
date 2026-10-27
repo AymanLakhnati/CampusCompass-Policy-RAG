@@ -9,7 +9,7 @@ def code(text):cells.append({'cell_type':'code','metadata':{},'execution_count':
 md('''# CampusCompass reproducible demonstration
 **Ayman Lakhnati · MAAI902 · NLP Solution Design**
 
-This notebook runs the local university-policy assistant, inspects evidence, evaluates retrieval, and optionally runs actual neural models. All policies describe a fictional campus. They are not institutional advice. The default demo needs Python 3.10+ and no API key.
+This executed notebook demonstrates the final V2 local university-policy assistant, its decision trace, multiple-policy evidence and optional neural models. All policies describe a fictional campus. They are not institutional advice. The default demo needs Python 3.10+ and no API key.
 
 Run this notebook from the repository, or upload and extract the source ZIP in a notebook environment. GPU execution is optional. Neural weights require internet access on first use. Saved reference measurements are in `results/`; reruns write to a separate directory.''')
 code('''from pathlib import Path
@@ -22,18 +22,36 @@ if ROOT is None:
 sys.path.insert(0, str(ROOT / 'src'))
 from campuscompass import PolicyIndex
 index = PolicyIndex(ROOT / 'data/policies.jsonl')
-for config in [ROOT / 'results/lexical/frozen_config.json', ROOT / 'results/neural/frozen_config.json']:
+for config in [ROOT / 'results/v2/frozen_config.json']:
     if config.exists():
         index.mode_thresholds.update(json.loads(config.read_text())['thresholds'])
 print('Policies:', len(index.documents))
 print('Corpus SHA256:', index.corpus_sha256)
+print('Frozen V2 thresholds:', index.mode_thresholds)
 ''')
 md('''## Evidence backed answers
-The baseline quotes source sentences verbatim. Its overlap score is a heuristic, not a calibrated probability. A valid citation identifier does not prove that the evidence answers every part of the question.''')
+V2 preserves complete short policy paragraphs, including nearby exceptions. Lexical modes use token coverage; neural modes use encoder cosine. Neither is a calibrated correctness probability. A valid citation identifier does not prove semantic relevance.''')
 code('''question = 'How many books may an undergraduate borrow and for how long?'
 response = index.answer(question, mode='bm25', top_k=3)
 print(json.dumps(response, indent=2))
 print('Citation IDs valid:', index.verify_citations(response))
+''')
+md('''## Complete evidence across multiple policies
+Each supported question facet selects evidence. Inspect both the source identifiers and the conditions in their original paragraphs. Facet decomposition is a heuristic, and the evaluation measures its failures as well as its successes.''')
+code('''question = 'How much notice is needed for a student club event, and how long can a club reserve a teaching room?'
+multi = index.answer(question, mode='bm25', top_k=3)
+print('Status:', multi['status'])
+print(multi['answer'])
+print('Cited policies:', [c['id'] for c in multi['citations']])
+print('Coverage:', json.dumps(multi.get('coverage', {}), indent=2))
+''')
+md('''## Inspect the decision and export evidence
+The trace separates privacy screening, intent handling, query planning, relevance and evidence assembly. The export contains the redacted query and source evidence, not an undisclosed claim of model certainty.''')
+code('''print(json.dumps(multi.get('decision_trace', []), indent=2))
+export = ROOT / 'build/notebook_evidence.json'
+export.parent.mkdir(exist_ok=True)
+export.write_text(json.dumps(multi, indent=2, ensure_ascii=False), encoding='utf-8')
+print('Exported actual response:', export.name)
 ''')
 md('''## Abstention and privacy checks
 These examples exercise a few safeguards. Pattern matching cannot guarantee prompt-injection resistance or complete anonymization.''')
@@ -54,11 +72,12 @@ code('''for mode in ['tfidf', 'bm25']:
         print(hit['id'], hit['title'], hit['score'])
 ''')
 md('''## Reproduce evaluation
-Read `scripts/evaluate.py --help` before rerunning. Development questions select abstention settings, and test results are reported separately. The corpus and questions were authored for this project and are not an independent real-world benchmark.''')
-code('''subprocess.run([sys.executable, str(ROOT / 'scripts/evaluate.py'), '--help'], cwd=ROOT, check=True)
+Read `scripts/evaluate_v2.py --help` before rerunning. Development questions select settings. The original test is a regression set because its results were previously observed. The separately frozen audit questions were withheld from the implementation agent, but are still authored within the same project, not external validation.''')
+code('''help_result = subprocess.run([sys.executable, str(ROOT / 'scripts/evaluate_v2.py'), '--help'], cwd=ROOT, check=True, capture_output=True, text=True)
+print(help_result.stdout)
 # The exact recorded invocation is documented in README.md.
 # Reference measurements, hashes, and per-query predictions are included below.
-for path in sorted((ROOT / 'results').glob('*.json')):
+for path in sorted((ROOT / 'results/v2').glob('*.json')):
     print(path.name)
 ''')
 md('''## Optional neural retrieval and local language model
@@ -74,7 +93,8 @@ code('''# Opt in after installing optional dependencies:
 # print([(h['id'], h['score']) for h in hits])
 script = ROOT / 'scripts/run_llm_experiment.py'
 if script.exists():
-    subprocess.run([sys.executable, str(script), '--help'], cwd=ROOT, check=True)
+    help_result = subprocess.run([sys.executable, str(script), '--help'], cwd=ROOT, check=True, capture_output=True, text=True)
+    print(help_result.stdout)
 ''')
 md('''## Demonstration interface
 From a terminal in the project folder, run `python app.py` and open `http://127.0.0.1:8765`. The demo binds to localhost. Never submit real student records to this academic prototype.

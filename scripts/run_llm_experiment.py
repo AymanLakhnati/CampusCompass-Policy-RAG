@@ -13,8 +13,8 @@ import json
 import platform
 import statistics
 import time
-from campuscompass import PolicyIndex
-from campuscompass.llm import LocalGenerator, MODEL_ID, MODEL_REVISION
+from campuscompass.engine_v1 import PolicyIndex
+from campuscompass.llm_v1 import LocalGenerator, MODEL_ID, MODEL_REVISION
 
 
 def main():

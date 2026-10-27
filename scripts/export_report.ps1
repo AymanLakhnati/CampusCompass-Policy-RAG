@@ -1,7 +1,7 @@
-param([string]$ProjectRoot = (Split-Path $PSScriptRoot -Parent))
+param([string]$ProjectRoot = (Split-Path $PSScriptRoot -Parent), [string]$Stem = 'CampusCompass_Final_Report')
 $ErrorActionPreference = 'Stop'
-$source = Join-Path $ProjectRoot 'deliverables\CampusCompass_Technical_Report.docx'
-$target = Join-Path $ProjectRoot 'deliverables\CampusCompass_Technical_Report.pdf'
+$source = Join-Path $ProjectRoot ('deliverables\' + $Stem + '.docx')
+$target = Join-Path $ProjectRoot ('deliverables\' + $Stem + '.pdf')
 $word = New-Object -ComObject Word.Application
 $word.Visible = $false
 $word.DisplayAlerts = 0

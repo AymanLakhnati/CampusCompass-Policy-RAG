@@ -4,12 +4,20 @@
 **Module:** MAAI902 Natural Language Processing and LLMs  
 **Assessment:** Task 2 NLP Solution Design
 
-1. Read `deliverables/CampusCompass_Technical_Report.pdf`.
-2. Use `deliverables/CampusCompass_Technical_Report.docx` for editable text.
-3. Present `deliverables/CampusCompass_Presentation.pptx` with its speaker notes.
+1. Read `deliverables/CampusCompass_Final_Report.pdf`.
+2. Use `deliverables/CampusCompass_Final_Report.docx` for editable text.
+3. Present `deliverables/CampusCompass_Final_Presentation.pptx` with its speaker notes.
 4. Follow `docs/DEMONSTRATION.md` for a live demonstration and likely questions.
 5. Run `python app.py` from this folder, then open http://127.0.0.1:8765.
-6. Review the executed notebook and `results/EVALUATION.md` for experiment evidence.
+6. Review the executed notebook and `results/v2/EVALUATION_V2.md` for final experiment evidence.
+
+The final paper is 16 pages, black and white, 12-point Times New Roman with
+double spacing and one-inch margins. Its main body is 3,497 words.
+The editable Canva companion is https://canva.link/cqf7cwk9ydh5jrq .
+The downloadable PowerPoint is the verified submission presentation; it is a
+separate artifact from Canva and contains the final measured results.
+The original transparent logo is `assets/brand/CampusCompass_Logo.png` and is
+embedded on the final PowerPoint cover and closing slide.
 
 Public source: https://github.com/AymanLakhnati/CampusCompass-Policy-RAG
 

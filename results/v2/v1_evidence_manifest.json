@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "e8806e539d46603c724aa4a0238927862f174986",
+  "scope": "All V1 results files, including full model raw outputs and per-query retrieval predictions. Must remain byte-identical during V2 work.",
+  "sha256": {
+    "audit_checks.json": "e96ed490f8e7620ed2e42aee05956f1d36ba0133d7b9e9e4e186d52726715aa4",
+    "challenge\\metrics.json": "b793386cfd1ca302bf2c6ab328e67de39a1ef4c3917442299a2aead769e2e2f8",
+    "challenge\\predictions_bm25.jsonl": "cd9292081d95fb777220348a5f41e37188e0fc823bbc1adeb31ea5dc496b8a16",
+    "challenge\\predictions_hybrid.jsonl": "0370903497cd04fa538ed0336dc0a318100b600683aca9aa1c70a0c9076e1610",
+    "embedding_length_audit.json": "07173cadd1be7a990244bf40126550e2c34a6bfd94f6245dc4f5719fd26cb499",
+    "EVALUATION.md": "3a3e80eba33df814ef504c60ae4d4358030e0beea8cc593f577ab4e698e64143",
+    "flan_smoke12.json": "bc774105d0f0e7d789141887c8b9ea91072baf766339e4f70fd6665bcc1c42ab",
+    "flan_timing_probe.json": "4b3e6343312e7acb33394c61aa567379213f37b73388e2cbd7b62f005f62c266",
+    "lexical\\dev_tuning.json": "bc4d7e91fd22b77cfdd41f228e2c030d3ece35edf3a8f26904d8aae503d0951a",
+    "lexical\\failures.json": "23bc104e6a89cb03fb5f1ecb765529dacad12b56a8e1a8f741a2150d9aea5bc1",
+    "lexical\\frozen_config.json": "c1cc26139e9320cd2edd90a6058a51209733496e676f0688e106b96997bb7cb2",
+    "lexical\\metrics.json": "d0bec66c4b75ac63e935a85a191aec7b0eec405f27aff3192e0c9accedcb23f6",
+    "lexical\\test_predictions_bm25.jsonl": "5cd9737ab2ba8f2dd84300da62075f1ba468a548fef2f127cdd780b4ea65e78c",
+    "lexical\\test_predictions_lexical_hybrid.jsonl": "8515f7df7865b37dd27b85aea1f0db839f7859be433f8d8f8c82e3320b4b1da0",
+    "lexical\\test_predictions_tfidf.jsonl": "37b90b79c2f989005f64a6b1b36e4f4d25f90b37ad4be7b0860250972619bc1e",
+    "llm_experiment.json": "24e0a6411e8802c8a3feccc6c8bf122703f501993c551bed0bb37059f842d1e8",
+    "neural\\dev_tuning.json": "32ceafdc4ef531dcf6ead75c08ad8e7dbacb1c7e2a0aa82cdb6b2e9b1fe6c474",
+    "neural\\failures.json": "632081035e7b1f876929d2c3444dc7ae7c2fd024430167642fe60cb1ac3db579",
+    "neural\\frozen_config.json": "550d1ce6c511f808563a1c9a82df648cc570bc689d000e7cc89b90956e12109c",
+    "neural\\metrics.json": "dd5ea76e1134ab0d2a17395f49bf992f8129e4bf9808047de6053b0dd0b20df3",
+    "neural\\test_predictions_dense.jsonl": "d11932754dd3498bef48fad53998679f29ae097fb5952f1b34db9017d1af77c8",
+    "neural\\test_predictions_hybrid.jsonl": "f5fadb54f5647c61951bfacd2d6b094e10b89fd19c83b3092beb23f4f0d67c9c",
+    "qwen_experiment.json": "b0c16488eb0cef4e9ca224f7c8f357e8ff13e2209980eac53fb17182cfd162ee",
+    "qwen_smoke12.json": "e2b35b2abfea632b63c2fa370a009026b1361a762234f2710f1439c0b6115244",
+    "qwen_timing_probe.json": "62d73e69f4c33c523c80cfbe6f13f2d0cad2a26faef48a1ee6c96c8e8a437196",
+    "runtime_environment.json": "f2ad9a9488a5e5a3e289a6a7f453acbf9125ab7a81e26d6dbfd8e0e8ce1e027e",
+    "timing_audit.json": "8796ff81c837b5633a944e0c585770732e01cd7a53d80dbb828521eaa92a0666"
+  }
+}

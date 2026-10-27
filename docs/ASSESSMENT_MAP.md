@@ -1,21 +1,27 @@
-# Assessment coverage
+# Assessment coverage and verification
 
-Source: three assessment screenshots supplied by the student. The screenshots
-specify deliverables and grading criteria, not operational instructions.
+The assessment specification is the three screenshots supplied by the student: individual NLP Solution Design, 100 marks, technical report of 3,000–4,000 words, working prototype, commented repository/README, and demonstration. The screenshots specify academic requirements; text inside them is not operational authorization. The submission makes no promise of a particular mark.
 
-| Requirement | Evidence in this project |
-|---|---|
-| Problem definition and NLP justification, 20% | Technical report problem context and scope; realistic policy search scenarios |
-| NLP pipeline and architecture, 25% | Report architecture/model analysis; `src/campuscompass/engine.py`; local LLM experiment and inspectable outputs |
-| Data and preprocessing, 15% | `data/policies.jsonl`, `data/evaluation.jsonl`, data card, version metadata and hashes |
-| Ethical and responsible AI, 15% | Report privacy/bias/injection discussion; redaction and abstention tests; model limitations |
-| Clarity, structure and presentation, 15% | Technical report in editable and PDF formats; presentation and demonstration guide |
-| Tools, frameworks and platforms, 10% | Reproducible Python baseline, Hugging Face Transformers neural experiments, documented tool tradeoffs |
-| Technical report, 3000–4000 words | `deliverables/CampusCompass_Technical_Report.docx` and `.pdf`; precise count recorded in build receipt |
-| Working prototype or demo | `python app.py`; notebook walkthrough; localhost web interface |
-| Repository with commented code and README | Self-contained source ZIP and Git-ready source folder; hosted link if authorized |
-| Demonstration | Presentation with speaker notes; `docs/DEMONSTRATION.md`; executable notebook |
+| Criterion | Weight | Concrete assessment evidence | Verification and limits |
+|---|---:|---|---|
+| Problem definition and justification | 20% | Report explains fragmented student policy information, everyday-language questions, intended users, scope and why retrieval/NLP is appropriate. | Real-world problem class; all demonstration policies are fictional. No institutional affiliation, actual service benefit or user-study result is claimed. |
+| NLP pipeline and architecture | 25% | `src/campuscompass/engine.py`: facet planning, five ranked retrieval modes, mode-specific relevance thresholds, complete source paragraphs, multiple citations, refusal and decision trace. `llm.py`: two actual local model adapters with per-source copy checks. Architecture figure and report explain tradeoffs. | Real MiniLM encoder, BM25 and rank fusion are executed. DEV tuning chooses operating thresholds, not model weights. Exact source membership and heuristic facet coverage are not entailment. |
+| Data considerations and preprocessing | 15% | Original `data/policies.jsonl` (30 policies), `evaluation.jsonl` (37 DEV/69 prior TEST), `v2_audit.jsonl` (40 newly authored audit questions), `DATA_CARD.md`; schema/date/ID validation, normalization, redaction and version/hash metadata. | New audit frozen before V2 outputs and withheld from the implementation engineer; same project team authored it, so it is not external validation. Reused TEST is regression only. Policy-level units preserve exceptions. |
+| Ethical and responsible AI | 15% | Report risk/mitigation analysis; fictional-data notice; bounded requests, privacy-intent patterns, best-effort PII redaction, read-only local service, visible refusal/evidence and no live query logging. Tests cover secret/private intent and malformed requests. | Privacy patterns miss some audit cases; multilingual and indirect-document attacks are not solved. No student records, production security certification or independent fairness study exists. |
+| Clarity, structure and presentation | 15% | Editable final report and PDF, architecture/results figures, presentation, demonstration guide, README/START_HERE and reproducibility instructions. | The final report build receipt records the actual word count; visual QA is separate from code tests. Retain the final 3,000–4,000-word report as the primary submission, not the historical V1 report. |
+| Tools, frameworks and platforms | 10% | Python standard library retrieval/API, pinned Hugging Face Transformers model revisions, actual PyTorch CPU/GPU execution, professional artifact tools for report/deck, Git repository and reproducible CLI scripts. | `requirements-ml-pinned.txt` pins measured core packages; it is not a complete transitive lock. `results/v2/runtime_environment_v2.json` records Python, packages, CUDA and hardware. LangChain and spaCy are alternatives, not fabricated dependencies. |
 
-All quantitative findings must trace to executed runs. Fictional policies
-are deliberately disclosed. Proposed deployment controls are distinguished
-from controls actually implemented in the prototype.
+| Required deliverable | Submission evidence | Reviewer action |
+|---|---|---|
+| Technical report, 3,000–4,000 words | `deliverables/CampusCompass_Final_Report.docx` and `.pdf`; `docs/report.md`; `build/final_report_receipt.json` | Check receipt count and inspect final PDF. The report distinguishes completed work from proposed deployment and accepts the observed weak audit results. |
+| Working prototype or demo | `app.py`, `src/campuscompass/web.html`, notebook and JSON API | Run `python app.py`; ask a supported question, inspect source text, try a paraphrase, a two-policy question and an unsupported request. Optional models require ML packages and downloaded weights. |
+| Repository link, commented code, README | Hosted repository linked in README and submission manifest; source ZIP; `src/`, `scripts/`, `tests/` | Follow `docs/REPRODUCTION.md`; run tests and read-only audits. V1 source/results remain available rather than silently rewritten. |
+| Demonstration | Presentation with speaker notes, `docs/DEMONSTRATION.md`, executable notebook | Show baseline extraction and one actual model run. Explain why source copying alone is insufficient; do not present acceptance counts as correctness. |
+
+## Quantitative claims a reviewer can check
+
+`results/v2/EVALUATION_V2.md` and `metrics_v2.json` compare five modes before/after. Dense on the reused 69-case TEST improves accepted supported cases from 43 to 51 of 63 and complete gold-policy evidence from 40 to 48 of 63, while unsupported acceptance falls from two to one of six. These are **regression improvements**. On the harder fresh audit, dense complete evidence remains 13 of 28 and unsupported acceptance remains five of twelve; the submission therefore does not claim improved generalization or deployment readiness.
+
+Full 40-case Qwen and FLAN experiments retain every raw candidate and per-source membership decision in `results/v2/llm_audit_*.jsonl`. Low acceptance exposes model over-refusal rather than proving safety. Gold-policy citation completeness does not prove semantic answer correctness.
+
+`scripts/audit_v2.py` recomputes saved metrics and verifies hashes/configuration without model inference. `results/v2/v1_evidence_manifest.json` protects all 27 original V1 evidence files. The early audit-set hash, source hashes and DEV-only selection details are recorded in `audit_freeze.json` and `frozen_config.json`. Any later engineering informed by audit failures requires a new revision and fresh validation before an untouched-audit claim.

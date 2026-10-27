@@ -1,0 +1,9 @@
+# Tested core inference versions. This is not a full transitive lockfile.
+# Python 3.12 is the measured environment. Install an official CUDA PyTorch
+# wheel first if needed; the local +cu118 build also satisfies torch==2.5.1.
+torch==2.5.1
+transformers==4.57.1
+tokenizers==0.22.2
+huggingface-hub==0.36.2
+safetensors==0.8.0
+truststore==0.10.5

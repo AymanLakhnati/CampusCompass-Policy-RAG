@@ -17,3 +17,5 @@ jobs:
         run: node tests/check_web_init.js
       - name: Saved experiment consistency
         run: python scripts/audit_results.py
+      - name: Final revision evidence consistency
+        run: python scripts/audit_v2.py

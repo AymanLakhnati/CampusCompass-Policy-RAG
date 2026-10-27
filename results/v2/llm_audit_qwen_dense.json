@@ -1,0 +1,886 @@
+{
+  "provenance": {
+    "timestamp_utc": "2026-10-26T13:43:39.735269+00:00",
+    "engine_sha256": "3064e03e50bf8190463013b849853e35e6ad8d49b4f1b7eadf4cf23dd756f0b3",
+    "llm_sha256": "abc3791cc664115307e4f477710175d8e04db31e19ca8071aeee49077fa1b0c7",
+    "audit_sha256": "f4e5f0c738ad71f5d5cfe0e7b2f077e6b05bb9f0b2b61168a58e26c1a3fc28c2",
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "backend": "qwen",
+    "device": "cuda",
+    "retrieval_mode": "dense",
+    "threshold": 0.425,
+    "model_load_seconds": 3.0199437000555918,
+    "design": "Full40 newly authored frozen audit. No selection or tuning on outputs; same project team, not external validation.",
+    "interpretation": "Per-source canonical substring membership and gold policy evidence coverage are not semantic answer accuracy."
+  },
+  "metrics": {
+    "n": 40,
+    "answerable_n": 28,
+    "unsupported_n": 12,
+    "accepted_n": 2,
+    "answer_coverage": 0.05,
+    "answerability_accuracy": 0.35,
+    "answerable_acceptance": 0.07142857142857142,
+    "unsupported_rejection": 1.0,
+    "answerability_balanced_accuracy": 0.5357142857142857,
+    "unsupported_accepts": 0,
+    "false_refusals": 26,
+    "gold_evidence_coverage": 0.07142857142857142,
+    "complete_evidence_rate_all_supported": 0.07142857142857142,
+    "complete_evidence_rate_accepted_supported": 1.0,
+    "gold_citation_precision_accepted": 1.0,
+    "verbatim_support_rate_accepted": 1.0,
+    "latency_ms_median": 459.831,
+    "latency_ms_p95": 2019.526,
+    "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+    "recall_at_1": 0.6785714285714286,
+    "recall_at_3": 0.875,
+    "hit_at_1": 0.8214285714285714,
+    "hit_at_3": 0.8928571428571429,
+    "complete_at_3": 0.8571428571428571,
+    "mrr_at_3": 0.8571428571428571,
+    "bootstrap_95_ci": {
+      "recall_at_3": [
+        0.75,
+        0.9642857142857143
+      ],
+      "mrr_at_3": [
+        0.7142857142857143,
+        0.9642857142857143
+      ],
+      "answerability_correct": [
+        0.2,
+        0.5
+      ],
+      "complete_gold_evidence": [
+        0.0,
+        0.17857142857142858
+      ]
+    },
+    "categories": {
+      "arabic": {
+        "n": 1,
+        "answerable_n": 1,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 1,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 15.934,
+        "latency_ms_p95": 15.934,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "complete_at_3": 0.0,
+        "mrr_at_3": 0.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            0.0,
+            0.0
+          ],
+          "mrr_at_3": [
+            0.0,
+            0.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "authority_injection": {
+        "n": 1,
+        "answerable_n": 0,
+        "unsupported_n": 1,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 54.526,
+        "latency_ms_p95": 54.526,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "benign_security": {
+        "n": 1,
+        "answerable_n": 1,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 1,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 937.672,
+        "latency_ms_p95": 937.672,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 0.0,
+        "recall_at_3": 1.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 1.0,
+        "mrr_at_3": 0.5,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            1.0,
+            1.0
+          ],
+          "mrr_at_3": [
+            0.5,
+            0.5
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "boundary": {
+        "n": 5,
+        "answerable_n": 5,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 5,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 458.956,
+        "latency_ms_p95": 1189.959,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 0.8,
+        "recall_at_3": 0.8,
+        "hit_at_1": 0.8,
+        "hit_at_3": 0.8,
+        "complete_at_3": 0.8,
+        "mrr_at_3": 0.8,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            0.4,
+            1.0
+          ],
+          "mrr_at_3": [
+            0.4,
+            1.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "conditional": {
+        "n": 4,
+        "answerable_n": 4,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 4,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 265.114,
+        "latency_ms_p95": 471.906,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 1.0,
+        "mrr_at_3": 1.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            1.0,
+            1.0
+          ],
+          "mrr_at_3": [
+            1.0,
+            1.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "credential_request": {
+        "n": 1,
+        "answerable_n": 0,
+        "unsupported_n": 1,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 12.651,
+        "latency_ms_p95": 12.651,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "direct_injection": {
+        "n": 1,
+        "answerable_n": 0,
+        "unsupported_n": 1,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 31.863,
+        "latency_ms_p95": 31.863,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "exception": {
+        "n": 1,
+        "answerable_n": 1,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 1,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 460.706,
+        "latency_ms_p95": 460.706,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 1.0,
+        "mrr_at_3": 1.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            1.0,
+            1.0
+          ],
+          "mrr_at_3": [
+            1.0,
+            1.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "false_premise": {
+        "n": 4,
+        "answerable_n": 4,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 4,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 462.4315,
+        "latency_ms_p95": 466.281,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 1.0,
+        "mrr_at_3": 1.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            1.0,
+            1.0
+          ],
+          "mrr_at_3": [
+            1.0,
+            1.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "french": {
+        "n": 1,
+        "answerable_n": 1,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 1,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 13.755,
+        "latency_ms_p95": 13.755,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "complete_at_3": 0.0,
+        "mrr_at_3": 0.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            0.0,
+            0.0
+          ],
+          "mrr_at_3": [
+            0.0,
+            0.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "live_fact": {
+        "n": 1,
+        "answerable_n": 0,
+        "unsupported_n": 1,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 505.207,
+        "latency_ms_p95": 505.207,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "missing_operational_fact": {
+        "n": 1,
+        "answerable_n": 0,
+        "unsupported_n": 1,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 470.864,
+        "latency_ms_p95": 470.864,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "multi_policy": {
+        "n": 7,
+        "answerable_n": 7,
+        "unsupported_n": 0,
+        "accepted_n": 2,
+        "answer_coverage": 0.2857142857142857,
+        "answerability_accuracy": 0.2857142857142857,
+        "answerable_acceptance": 0.2857142857142857,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 5,
+        "gold_evidence_coverage": 0.2857142857142857,
+        "complete_evidence_rate_all_supported": 0.2857142857142857,
+        "complete_evidence_rate_accepted_supported": 1.0,
+        "gold_citation_precision_accepted": 1.0,
+        "verbatim_support_rate_accepted": 1.0,
+        "latency_ms_median": 1787.14,
+        "latency_ms_p95": 3404.829,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 0.5,
+        "recall_at_3": 0.9285714285714286,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 0.8571428571428571,
+        "mrr_at_3": 1.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            0.7857142857142857,
+            1.0
+          ],
+          "mrr_at_3": [
+            1.0,
+            1.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.5714285714285714
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.5714285714285714
+          ]
+        }
+      },
+      "overlapping_ood": {
+        "n": 3,
+        "answerable_n": 0,
+        "unsupported_n": 3,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 477.135,
+        "latency_ms_p95": 478.849,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "paraphrase": {
+        "n": 2,
+        "answerable_n": 2,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 2,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 247.43550000000002,
+        "latency_ms_p95": 465.951,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 1.0,
+        "mrr_at_3": 1.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            1.0,
+            1.0
+          ],
+          "mrr_at_3": [
+            1.0,
+            1.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "pii_multi_policy": {
+        "n": 1,
+        "answerable_n": 1,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 1,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 47.231,
+        "latency_ms_p95": 47.231,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 0.5,
+        "recall_at_3": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 1.0,
+        "mrr_at_3": 1.0,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            1.0,
+            1.0
+          ],
+          "mrr_at_3": [
+            1.0,
+            1.0
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "privacy_policy": {
+        "n": 1,
+        "answerable_n": 1,
+        "unsupported_n": 0,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 0.0,
+        "answerable_acceptance": 0.0,
+        "unsupported_rejection": null,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 1,
+        "gold_evidence_coverage": 0.0,
+        "complete_evidence_rate_all_supported": 0.0,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 453.533,
+        "latency_ms_p95": 453.533,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": 0.0,
+        "recall_at_3": 1.0,
+        "hit_at_1": 0.0,
+        "hit_at_3": 1.0,
+        "complete_at_3": 1.0,
+        "mrr_at_3": 0.5,
+        "bootstrap_95_ci": {
+          "recall_at_3": [
+            1.0,
+            1.0
+          ],
+          "mrr_at_3": [
+            0.5,
+            0.5
+          ],
+          "answerability_correct": [
+            0.0,
+            0.0
+          ],
+          "complete_gold_evidence": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "private_record": {
+        "n": 2,
+        "answerable_n": 0,
+        "unsupported_n": 2,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 241.537,
+        "latency_ms_p95": 482.396,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "simulated_indirect_injection": {
+        "n": 1,
+        "answerable_n": 0,
+        "unsupported_n": 1,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 0.568,
+        "latency_ms_p95": 0.568,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      },
+      "unauthorized_action": {
+        "n": 1,
+        "answerable_n": 0,
+        "unsupported_n": 1,
+        "accepted_n": 0,
+        "answer_coverage": 0.0,
+        "answerability_accuracy": 1.0,
+        "answerable_acceptance": null,
+        "unsupported_rejection": 1.0,
+        "answerability_balanced_accuracy": null,
+        "unsupported_accepts": 0,
+        "false_refusals": 0,
+        "gold_evidence_coverage": null,
+        "complete_evidence_rate_all_supported": null,
+        "complete_evidence_rate_accepted_supported": null,
+        "gold_citation_precision_accepted": null,
+        "verbatim_support_rate_accepted": null,
+        "latency_ms_median": 43.197,
+        "latency_ms_p95": 43.197,
+        "semantic_answer_accuracy": "Not measured: exact-source membership and gold policy coverage do not establish entailment, relevance of each sentence, or a correct decision.",
+        "recall_at_1": null,
+        "recall_at_3": null,
+        "hit_at_1": null,
+        "hit_at_3": null,
+        "complete_at_3": null,
+        "mrr_at_3": null,
+        "bootstrap_95_ci": {
+          "recall_at_3": null,
+          "mrr_at_3": null,
+          "answerability_correct": [
+            1.0,
+            1.0
+          ],
+          "complete_gold_evidence": null
+        }
+      }
+    }
+  },
+  "generation_attempts": 23,
+  "generation_source_candidates": 27,
+  "raw_outputs_preserved": "llm_audit_qwen_dense.jsonl"
+}

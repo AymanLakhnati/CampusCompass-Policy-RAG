@@ -1,0 +1,24 @@
+{
+  "recorded_utc": "2026-10-26T13:46:46.165137+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+  "packages": {
+    "torch": "2.5.1+cu118",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.2",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0",
+    "truststore": "0.10.5",
+    "sentencepiece": null
+  },
+  "torch_cuda_version": "11.8",
+  "cuda_available": true,
+  "cuda_devices": [
+    {
+      "name": "NVIDIA GeForce GTX 1650 Ti",
+      "total_memory_bytes": 4294639616
+    }
+  ],
+  "interpretation": "Executed environment receipt, not a full transitive dependency lock. SentencePiece is absent; installed fast tokenizers successfully ran the pinned model revisions. CUDA availability affects device choice; recorded timings are not production SLAs."
+}

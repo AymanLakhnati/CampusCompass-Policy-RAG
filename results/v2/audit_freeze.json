@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-26T13:34:42.444638+00:00",
+  "audit_sha256": "f4e5f0c738ad71f5d5cfe0e7b2f077e6b05bb9f0b2b61168a58e26c1a3fc28c2",
+  "v1_engine_sha256": "7df8af33dd63ec94c2cc1b414e669e619bd978a55b707c07487d41146b565009",
+  "n": 40,
+  "answerable_n": 28,
+  "purpose": "New questions authored by evaluation agent before V2 output inspection. Withheld from implementation agent until freeze. Same project team, not external independent validation. V1 TEST already observed and is regression only. No audit-based tuning allowed."
+}

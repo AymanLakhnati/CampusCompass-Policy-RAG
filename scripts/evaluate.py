@@ -1,4 +1,6 @@
-"""Tune refusal on DEV; freeze configuration; evaluate TEST and save raw predictions.
+"""Legacy V1 evaluator. V2 uses evaluate_v2.py and separate results/v2 outputs.
+
+Tune refusal on DEV; freeze configuration; evaluate TEST and save raw predictions.
 
 No API keys or paid judge are used. Retrieval and deterministic extractive answers
 are evaluated, not the optional language model. Run optional LLM tests separately.
@@ -18,7 +20,7 @@ import time
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from campuscompass import PolicyIndex
+from campuscompass.engine_v1 import PolicyIndex
 
 
 def read_jsonl(path):

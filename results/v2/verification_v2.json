@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-10-26T13:53:06.729402+00:00",
+  "python_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 36,
+    "failed": 0
+  },
+  "web_initialization": {
+    "command": "node tests/check_web_init.js",
+    "status": "passed",
+    "checks": [
+      "submit/backend handlers",
+      "abstention evidence warning and source metadata",
+      "policy explorer",
+      "JSON export without appending textarea raw query",
+      "no remote font import"
+    ]
+  },
+  "evidence_audit": {
+    "command": "python scripts/audit_v2.py",
+    "passed_groups": 22,
+    "v1_files_preserved": 27,
+    "receipt": "audit_receipt_v2.json"
+  },
+  "fresh_directory_reproduction": {
+    "mode": "bm25",
+    "stages": [
+      "initialize",
+      "baseline",
+      "calibrate",
+      "evaluate",
+      "summarize",
+      "audit_v2"
+    ],
+    "status": "passed",
+    "threshold": 0.35,
+    "scope": "Temporary observations only; canonical evidence unchanged."
+  },
+  "semantic_accuracy": "Not measured; tests and exact copy/source completeness checks are not human answer correctness."
+}

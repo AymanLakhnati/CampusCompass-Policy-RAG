@@ -3,12 +3,22 @@ from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parent/'src'))
 from campuscompass import PolicyIndex
+from campuscompass.engine import validate_request, ENGINE_VERSION
 import argparse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 import threading
 
 ROOT=Path(__file__).resolve().parent
+
+
+def unique_json_object(pairs):
+    """Reject ambiguous duplicate fields instead of silently taking the last."""
+    result={}
+    for key,value in pairs:
+        if key in result: raise ValueError('Duplicate JSON fields are not permitted.')
+        result[key]=value
+    return result
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -23,7 +33,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header('Cache-Control','no-store'); self.send_header('X-Content-Type-Options','nosniff')
         self.send_header('Content-Length',str(len(payload))); self.end_headers(); self.wfile.write(payload)
     def do_GET(self):
-        if self.path=='/api/health': return self.send_json({'status':'ok','policies':len(self.index.documents),'corpus_sha256':self.index.corpus_sha256})
+        if self.path=='/api/health': return self.send_json({'status':'ok','engine_version':ENGINE_VERSION,'policies':len(self.index.documents),'corpus_sha256':self.index.corpus_sha256})
         if self.path=='/api/policies': return self.send_json(self.index.documents)
         if self.path!='/': return self.send_json({'error':'Not found'},404)
         payload=(ROOT/'src'/'campuscompass'/'web.html').read_bytes()
@@ -37,8 +47,11 @@ class Handler(BaseHTTPRequestHandler):
             origin=self.headers.get('Origin','')
             if origin and origin not in (f'http://127.0.0.1:{self.server.server_port}',f'http://localhost:{self.server.server_port}'):
                 return self.send_json({'error':'Cross-origin requests are disabled.'},403)
-            body=json.loads(payload)
+            if self.headers.get('Content-Type','').split(';')[0].strip().lower()!='application/json':
+                return self.send_json({'error':'Content-Type must be application/json.'},415)
+            body=json.loads(payload,object_pairs_hook=unique_json_object)
             if not isinstance(body,dict): raise ValueError('Request body must be a JSON object.')
+            if set(body)-{'query','mode','top_k','backend'}: raise ValueError('Unknown request fields. Allowed: query, mode, top_k, backend.')
             query=body.get('query','')
             if not isinstance(query,str) or not query.strip() or len(query)>4000: raise ValueError('Query must contain 1–4000 characters.')
             top_k=body.get('top_k',3)
@@ -47,7 +60,11 @@ class Handler(BaseHTTPRequestHandler):
             mode=body.get('mode','bm25')
             backend=body.get('backend','extractive')
             if backend not in ('extractive','flan','qwen'): raise ValueError('Unknown answer backend.')
+            validate_request(query,mode,top_k)
             if backend=='extractive': return self.send_json(self.index.answer(query,mode,top_k))
+            preflight=self.index.answer(query,mode,top_k)
+            if preflight['status']=='abstained':
+                return self.send_json(dict(preflight,answer_method='V2 preflight refusal; local model not loaded',generation_attempted=False,raw_model_output=None))
             # Serialize optional model loading/inference to avoid duplicate GPU/RAM use.
             from campuscompass.llm import LocalGenerator
             with self.generation_lock:
@@ -56,7 +73,7 @@ class Handler(BaseHTTPRequestHandler):
                     self.generators[backend]=LocalGenerator(backend,'cuda' if torch.cuda.is_available() else 'cpu')
                 result=self.generators[backend].answer(self.index,query,mode,top_k)
             return self.send_json(result)
-        except (ValueError,TypeError,json.JSONDecodeError) as exc: return self.send_json({'error':str(exc)},400)
+        except (ValueError,TypeError,UnicodeError,json.JSONDecodeError) as exc: return self.send_json({'error':str(exc)},400)
         except Exception as exc: return self.send_json({'error':'Optional model unavailable or request failed. Install requirements-ml.txt, check internet access for the first model download, or select extractive mode. '+type(exc).__name__},500)
 
 
@@ -68,13 +85,16 @@ def main():
     parser.add_argument('--corpus',type=Path,default=ROOT/'data'/'policies.jsonl')
     parser.add_argument('--backend',choices=['extractive','flan','qwen'],default='extractive')
     args=parser.parse_args(); Handler.index=PolicyIndex(args.corpus,abstention_threshold=.35)
-    for config in (ROOT/'results'/'lexical'/'frozen_config.json',ROOT/'results'/'neural'/'frozen_config.json'):
+    for config in (ROOT/'results'/'v2'/'frozen_config.json',):
         if config.exists(): Handler.index.mode_thresholds.update(json.loads(config.read_text(encoding='utf-8')).get('thresholds',{}))
     if args.query:
         if args.backend=='extractive': result=Handler.index.answer(args.query,args.mode)
         else:
-            from campuscompass.llm import LocalGenerator
-            result=LocalGenerator(args.backend).answer(Handler.index,args.query,args.mode)
+            preflight=Handler.index.answer(args.query,args.mode)
+            if preflight['status']=='abstained': result=dict(preflight,generation_attempted=False,answer_method='V2 preflight refusal; local model not loaded',raw_model_output=None)
+            else:
+                from campuscompass.llm import LocalGenerator
+                result=LocalGenerator(args.backend).answer(Handler.index,args.query,args.mode)
         print(json.dumps(result,indent=2,ensure_ascii=False)); return
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
     print(f'CampusCompass running at http://127.0.0.1:{args.port} (Ctrl+C to stop). No query logging.')

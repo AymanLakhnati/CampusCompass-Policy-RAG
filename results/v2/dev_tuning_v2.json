@@ -1,0 +1,652 @@
+{
+  "bm25": {
+    "selected": {
+      "threshold": 0.35,
+      "answerability_balanced_accuracy": 0.967741935483871,
+      "unsupported_rejection": 1.0,
+      "complete_evidence_rate_all_supported": 0.9354838709677419,
+      "answerable_acceptance": 0.9354838709677419
+    },
+    "candidates": [
+      {
+        "threshold": 0.2,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.225,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.25,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.275,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.3,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.325,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.35,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.375,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.4,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.425,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.45,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.475,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.5,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.525,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.55,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.575,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.6,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      }
+    ]
+  },
+  "tfidf": {
+    "selected": {
+      "threshold": 0.35,
+      "answerability_balanced_accuracy": 0.967741935483871,
+      "unsupported_rejection": 1.0,
+      "complete_evidence_rate_all_supported": 0.9354838709677419,
+      "answerable_acceptance": 0.9354838709677419
+    },
+    "candidates": [
+      {
+        "threshold": 0.2,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.225,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.25,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.275,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.3,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.325,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.35,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.375,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.4,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.425,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.45,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.475,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.5,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.525,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.55,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.575,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.6,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      }
+    ]
+  },
+  "lexical_hybrid": {
+    "selected": {
+      "threshold": 0.35,
+      "answerability_balanced_accuracy": 0.967741935483871,
+      "unsupported_rejection": 1.0,
+      "complete_evidence_rate_all_supported": 0.9354838709677419,
+      "answerable_acceptance": 0.9354838709677419
+    },
+    "candidates": [
+      {
+        "threshold": 0.2,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.225,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.25,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.275,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.3,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.325,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.35,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.375,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.4,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.425,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.45,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.475,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.5,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.525,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.55,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.575,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      },
+      {
+        "threshold": 0.6,
+        "answerability_balanced_accuracy": 0.8387096774193548,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.6774193548387096,
+        "answerable_acceptance": 0.6774193548387096
+      }
+    ]
+  },
+  "dense": {
+    "selected": {
+      "threshold": 0.425,
+      "answerability_balanced_accuracy": 0.9838709677419355,
+      "unsupported_rejection": 1.0,
+      "complete_evidence_rate_all_supported": 0.967741935483871,
+      "answerable_acceptance": 0.967741935483871
+    },
+    "candidates": [
+      {
+        "threshold": 0.2,
+        "answerability_balanced_accuracy": 0.6505376344086021,
+        "unsupported_rejection": 0.3333333333333333,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.225,
+        "answerability_balanced_accuracy": 0.6505376344086021,
+        "unsupported_rejection": 0.3333333333333333,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.25,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.275,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.3,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.325,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.35,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.375,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.4,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.425,
+        "answerability_balanced_accuracy": 0.9838709677419355,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.45,
+        "answerability_balanced_accuracy": 0.9838709677419355,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.475,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.5,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.525,
+        "answerability_balanced_accuracy": 0.9032258064516129,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.8064516129032258,
+        "answerable_acceptance": 0.8064516129032258
+      },
+      {
+        "threshold": 0.55,
+        "answerability_balanced_accuracy": 0.9032258064516129,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.8064516129032258,
+        "answerable_acceptance": 0.8064516129032258
+      },
+      {
+        "threshold": 0.575,
+        "answerability_balanced_accuracy": 0.9032258064516129,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.8064516129032258,
+        "answerable_acceptance": 0.8064516129032258
+      },
+      {
+        "threshold": 0.6,
+        "answerability_balanced_accuracy": 0.8709677419354839,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.7419354838709677,
+        "answerable_acceptance": 0.7419354838709677
+      }
+    ]
+  },
+  "hybrid": {
+    "selected": {
+      "threshold": 0.425,
+      "answerability_balanced_accuracy": 0.9838709677419355,
+      "unsupported_rejection": 1.0,
+      "complete_evidence_rate_all_supported": 0.967741935483871,
+      "answerable_acceptance": 0.967741935483871
+    },
+    "candidates": [
+      {
+        "threshold": 0.2,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.225,
+        "answerability_balanced_accuracy": 0.7338709677419355,
+        "unsupported_rejection": 0.5,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.25,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.275,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.3,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.325,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.35,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.375,
+        "answerability_balanced_accuracy": 0.8172043010752688,
+        "unsupported_rejection": 0.6666666666666666,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.4,
+        "answerability_balanced_accuracy": 0.9005376344086022,
+        "unsupported_rejection": 0.8333333333333334,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.425,
+        "answerability_balanced_accuracy": 0.9838709677419355,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.45,
+        "answerability_balanced_accuracy": 0.9838709677419355,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.967741935483871,
+        "answerable_acceptance": 0.967741935483871
+      },
+      {
+        "threshold": 0.475,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.5,
+        "answerability_balanced_accuracy": 0.967741935483871,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.9354838709677419,
+        "answerable_acceptance": 0.9354838709677419
+      },
+      {
+        "threshold": 0.525,
+        "answerability_balanced_accuracy": 0.9032258064516129,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.8064516129032258,
+        "answerable_acceptance": 0.8064516129032258
+      },
+      {
+        "threshold": 0.55,
+        "answerability_balanced_accuracy": 0.9032258064516129,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.8064516129032258,
+        "answerable_acceptance": 0.8064516129032258
+      },
+      {
+        "threshold": 0.575,
+        "answerability_balanced_accuracy": 0.9032258064516129,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.8064516129032258,
+        "answerable_acceptance": 0.8064516129032258
+      },
+      {
+        "threshold": 0.6,
+        "answerability_balanced_accuracy": 0.8709677419354839,
+        "unsupported_rejection": 1.0,
+        "complete_evidence_rate_all_supported": 0.7419354838709677,
+        "answerable_acceptance": 0.7419354838709677
+      }
+    ]
+  }
+}
