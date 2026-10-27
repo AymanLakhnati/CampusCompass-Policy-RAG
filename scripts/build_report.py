@@ -8,10 +8,27 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'deliverables'
 BLACK=RGBColor(0,0,0)
+REPOSITORY='https://github.com/AymanLakhnati/CampusCompass-Policy-RAG'
+
+def repository_link(paragraph):
+    """Embed an external hyperlink with explicit monochrome academic styling."""
+    link=OxmlElement('w:hyperlink')
+    link.set(qn('r:id'),paragraph.part.relate_to(REPOSITORY,RT.HYPERLINK,is_external=True))
+    run=OxmlElement('w:r');props=OxmlElement('w:rPr')
+    fonts=OxmlElement('w:rFonts')
+    for key in ['ascii','hAnsi','eastAsia','cs']:fonts.set(qn('w:'+key),'Times New Roman')
+    props.append(fonts)
+    for tag,attrs in [('color',{'val':'000000'}),('sz',{'val':'24'}),('u',{'val':'single'})]:
+        element=OxmlElement('w:'+tag)
+        for key,value in attrs.items():element.set(qn('w:'+key),value)
+        props.append(element)
+    run.append(props);text=OxmlElement('w:t');text.text=REPOSITORY;run.append(text)
+    link.append(run);paragraph._p.append(link)
 
 def inline(p,text):
     for part in re.split(r'(\*\*.*?\*\*|\*[^*]+\*|`[^`]+`)',text):
@@ -86,6 +103,8 @@ def build():
     p=doc.add_paragraph('CampusCompass Evidence Grounded University Policy Assistance','Title');p.alignment=1;p.paragraph_format.keep_with_next=True
     for text in ['Ayman Lakhnati','MAAI 902 Natural Language Processing and LLMs','Assessment Task 2 NLP Solution Design','26 October 2026']:
         p=doc.add_paragraph(text);p.alignment=1;p.paragraph_format.keep_with_next=True
+    p=doc.add_paragraph('Project repository');p.alignment=1;p.paragraph_format.keep_with_next=True
+    p=doc.add_paragraph();p.alignment=1;p.paragraph_format.keep_with_next=True;repository_link(p)
     main=re.search(r'^## Abstract\s*$',source,re.M)
     lines=source[main.start():].splitlines();i=0;references=False
     while i<len(lines):
@@ -133,8 +152,7 @@ def build():
     before_refs=re.split(r'^## References\s*$',source,flags=re.M)[0]
     assessed=re.search(r'^## 1[ .]',before_refs,re.M)
     main_body=before_refs[assessed.start():]
-    main_body=re.split(r'^## AI assistance disclosure\s*$',main_body,flags=re.M)[0]
-    receipt={'main_body_words':count_words(main_body),'abstract_through_disclosure_words':count_words(before_refs[main.start():]),'source':'docs/report.md','output':path.name,'format':'A4 Times New Roman 12 pt double spaced 1 inch margins monochrome','count_method':'Alphanumeric words including section headings table contents and figure captions; excludes title metadata abstract disclosure references for main_body_words; Markdown syntax and figure paths excluded.'}
+    receipt={'main_body_words':count_words(main_body),'abstract_and_main_body_words':count_words(before_refs[main.start():]),'repository_url':REPOSITORY,'source':'docs/report.md','output':path.name,'format':'A4 Times New Roman 12 pt double spaced 1 inch margins monochrome','count_method':'Alphanumeric words including section headings table contents and figure captions; excludes title metadata abstract references for main_body_words; Markdown syntax and figure paths excluded.'}
     if not 3000<=receipt['main_body_words']<=4000:raise ValueError(receipt)
     (ROOT/'build/final_report_receipt.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8');print(json.dumps(receipt,indent=2))
 

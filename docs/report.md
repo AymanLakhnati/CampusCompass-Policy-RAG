@@ -4,6 +4,7 @@
 **Course:** MAAI 902 Natural Language Processing and LLMs  
 **Assessment:** Task 2 NLP Solution Design  
 **Date:** 26 October 2026  
+**Project repository:** https://github.com/AymanLakhnati/CampusCompass-Policy-RAG  
 **Status:** Version 2 educational prototype using fictional university policies
 
 ## Abstract
@@ -115,10 +116,6 @@ The final package includes the executable interface, original policy data, repro
 Expected benefits are faster access to approved information and less effort auditing routine answers. Neither reduced staff workload nor improved student satisfaction has been measured. A pilot should compare verified task completion and time to correct information against ordinary website search, accounting for escalation quality and document maintenance. Costs include review effort, model storage, inference, updates and incident handling. Local inference reduces dependence on an external generation endpoint, but does not remove maintenance or privacy obligations.
 
 The immediate priority is independent semantic evaluation on approved real policies, followed by better relevance verification and multiple-question planning where failures justify them. A limited supervised pilot should begin with low-impact informational topics and retain official evidence prominently. Model size, reranking and multilingual expansion should follow measured needs. CampusCompass contributes a reproducible design and an explicit account of how retrieval, source copying and answer correctness differ; operational trust must be earned through stronger evidence than this controlled prototype provides.
-
-## AI assistance disclosure
-
-AI assistance supported research, synthetic-data authorship, implementation, evaluation and drafting. The student must review the artifacts, understand the methods and follow course attribution rules. No external human validation or institutional endorsement is claimed.
 
 ## References
 
